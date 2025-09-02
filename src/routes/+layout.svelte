@@ -2,6 +2,8 @@
 	import '../app.css';
 	import Head from '$lib/components/Head.svelte';
 	import { themeStore } from '$lib/theme'; // use $themeStore in markup
+	import Navbar from '$lib/components/Navbar.svelte';
+
 </script>
 
 <Head title="pecuk.dev" description="My website built with SvelteKit + Tailwind" />
@@ -37,6 +39,12 @@
               bg-[radial-gradient(2px_2px_at_20%_30%,#fff,transparent_40%),
                   radial-gradient(1.5px_1.5px_at_70%_60%,#fff,transparent_40%),
                   radial-gradient(1.5px_1.5px_at_40%_80%,#fff,transparent_40%)]"></div>
+
+
+	<!-- little top spacing so background is visible above the nav -->
+	<div class="pt-6 md:pt-8">
+		<Navbar logo="Logo" />
+	</div>
 
 	<slot />
 </div>
