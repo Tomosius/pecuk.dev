@@ -1,16 +1,22 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
+const dev = process.argv.includes('dev'); // true for `npm run dev`
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	preprocess: vitePreprocess(),
 	kit: {
 		adapter: adapter({
-			pages: 'build',   // where HTML ends up
-			assets: 'build',  // where static assets go
-			fallback: '404.html' // SPA fallback so /routes work on Pages/Apache
+			pages: 'build',
+			assets: 'build',
+			fallback: '404.html'
 		}),
-		prerender: { entries: ['*'] } // make the whole site static
+		paths: {
+			// when serving from /<repo-name>/ on GitHub Pages
+			base: dev ? '' : '/pecuk.dev'
+		},
+		prerender: { entries: ['*'] }
 	}
 };
 
