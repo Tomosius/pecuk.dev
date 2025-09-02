@@ -15,6 +15,8 @@
     --bg-bottom: {$themeStore.bgBottom};
     --glow-top: {$themeStore.glowTop};
     --glow-side: {$themeStore.glowSide};
+    --accent: {$themeStore.accent};
+    --accent-soft: {$themeStore.accentSoft};
   "
 >
 	<!-- ONE background layer with multiple images (top-most first) -->
