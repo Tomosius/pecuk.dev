@@ -3,10 +3,15 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://svelte.dev/docs/kit/integrations
-	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-	kit: { adapter: adapter() }
+	kit: {
+		adapter: adapter({
+			pages: 'build',   // where HTML ends up
+			assets: 'build',  // where static assets go
+			fallback: '404.html' // SPA fallback so /routes work on Pages/Apache
+		}),
+		prerender: { entries: ['*'] } // make the whole site static
+	}
 };
 
 export default config;
