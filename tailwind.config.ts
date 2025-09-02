@@ -8,29 +8,12 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				// Core brand identity
-				cc_brand: colors.indigo,
-				cc_accent: colors.pink,
-
-				// Neutral system
-				cc_neutral: colors.gray,
-				cc_surface: colors.slate,
-				cc_border: colors.zinc,
-
-				// States
-				cc_success: colors.green,
-				cc_warning: colors.yellow,
-				cc_danger: colors.red,
-				cc_info: colors.blue,
-
-				// Status / Special
-				cc_highlight: colors.amber,
-				cc_muted: colors.stone,
-				cc_overlay: colors.black,
-
-				// Decorative / optional
-				cc_secondary: colors.purple,
-				cc_tertiary: colors.teal,
+				cc_primary: "#2B0B3F",    // deep royal purple
+				cc_secondary: "#44215C",  // dark plum
+				cc_accent: "#BB86FC",     // neon lavender
+				cc_highlight: "#FF6B6B",  // warm coral
+				cc_neutral_light: "#F5F5F5", // light gray
+				cc_neutral_dark: "#1E1E1E",  // dark gray
 			},
 		},
 	},
