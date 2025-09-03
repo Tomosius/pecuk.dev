@@ -65,7 +65,7 @@
 			</nav>
 
 			<div class="ml-auto flex items-center gap-2">
-				<!-- Language placeholder -->
+				<!-- Language placeholder
 				<button
 					class="hidden sm:inline-flex px-3 py-1.5 rounded-xl
                            border border-white/15 bg-white/5
@@ -73,7 +73,7 @@
 					title="Language"
 				>
 					EN
-				</button>
+				</button>   -->
 
 				<!-- Theme toggle -->
 				<button
