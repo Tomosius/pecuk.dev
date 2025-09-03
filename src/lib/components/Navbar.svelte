@@ -12,6 +12,7 @@
 	export let links: { href: string; label: string }[] = [
 		{ href: path('/'),         label: 'Home' },
 		{ href: path('/projects'), label: 'Projects' },
+		{ href: path('/blog'), label: 'Blog' },
 		{ href: path('/about'),    label: 'About' },
 		{ href: path('/contact'),  label: 'Contact' }
 	];
