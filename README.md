@@ -129,19 +129,19 @@ export type Project = {
 ### Example:
 ```ts
 {
-  slug: "vampyre",
-  title: "Vampyre — A Vampire History Site",
-  tagline: "HTML & CSS Showcase Project",
-  period: "2024",
-  tech: ["HTML", "CSS"],
-  tags: ["HTML", "CSS", "Responsive"],
-  summary: "A responsive website about vampire culture...",
-  body: "This project was built to demonstrate...",
+  slug: "vampyre";
+  title: "Vampyre — A Vampire History Site";
+  tagline: "HTML & CSS Showcase Project";
+  period: "2024";
+  tech: ["HTML", "CSS"];
+  tags: ["HTML", "CSS", "Responsive"];
+  summary: "A responsive website about vampire culture...";
+  body: "This project was built to demonstrate...";
   links: [
     { label: "Live site", href: "https://tomosius.github.io/Vampyre" },
     { label: "Source code", href: "https://github.com/Tomosius/Vampyre" }
-  ],
-  cover: "images/projects/vampyre/img.png",
+  ];
+  cover: "images/projects/vampyre/img.png";
   gallery: [
     "images/projects/vampyre/screenshot1.png",
     "images/projects/vampyre/screenshot2.png"
