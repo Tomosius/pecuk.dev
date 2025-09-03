@@ -30,7 +30,7 @@
 </script>
 
 <!-- Sticky wrapper so the nav stays on top -->
-<div class="sticky top-4 z-20">
+<div class="sticky top-4 z-50">
 	<div class="mx-auto max-w-6xl px-4">
 		<div
 			class="flex items-center gap-3 rounded-2xl border border-white/15

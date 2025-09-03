@@ -25,29 +25,25 @@
 		},
 		{
 			title: 'Web Apps from Provided Designs',
-			desc: 'You supply the UI (Figma etc.); I implement it in SvelteKit/Tailwind with solid backends (Flask/FastAPI/Django/Node).',
+			desc: 'You supply the UI (Figma etc.); I implement it in SvelteKit/Tailwind with solid backends (FastAPI/Django/Node).',
 			icon: '💻'
 		}
 	];
 
+	// Tech chips (unique strings -> safe as keys)
 	const tech = [
-		// Data & ML
 		'Postgres', 'DuckDB', 'Pandas/Polars', 'AI', 'Machine Learning',
-
-		// APIs & Backends
 		'FastAPI', 'Django', 'Node.js',
-
-		// Frontend (implementation only, not design)
 		'SvelteKit', 'React',
-
-		// Web fundamentals (optional if you want to show full-stack readiness)
 		'HTML', 'CSS', 'TypeScript'
 	];
+
+	// Placeholder tiles with unique numeric keys
+	const placeholders = Array.from({ length: 18 }, (_, i) => i);
 </script>
 
 <!-- page container -->
 <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pb-24">
-
 	<!-- HERO -->
 	<section class="pt-16 sm:pt-20 md:pt-28 text-center">
 		<p class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-sm opacity-90">
@@ -88,9 +84,8 @@
 	<section class="mt-12 md:mt-16" aria-label="Visual showcase">
 		<div class="rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.03] p-1">
 			<div class="rounded-2xl bg-black/30 p-6 md:p-10">
-				<!-- replace with a diagram/canvas later (ERD, pipeline, graph) -->
 				<div class="grid grid-cols-3 sm:grid-cols-6 gap-3 opacity-80">
-					{#each Array(18) as i (i)}
+					{#each placeholders as i (i)}
 						<div class="aspect-square rounded-xl border border-white/10 bg-white/[0.04]" aria-hidden="true"></div>
 					{/each}
 				</div>
