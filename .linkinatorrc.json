@@ -1,0 +1,5 @@
+{
+	"recurse": true,
+	"silent": true,
+	"skip": ["mailto:*", "tel:*", "https://twitter.com/*"]
+}

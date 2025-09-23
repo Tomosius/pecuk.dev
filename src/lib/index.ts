@@ -1,1 +1,3 @@
-// place files you want to import through the `$lib` alias in this folder.
+// src/lib/index.ts
+export { siteConfig } from './seo';
+export { default as Head } from './components/Head.svelte';
