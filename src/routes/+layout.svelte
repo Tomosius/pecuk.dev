@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '../app.css';
-	import { Head } from '$lib';
+	import { Head, Navbar } from '$lib';
 
 	let { children } = $props();
 </script>
@@ -10,6 +10,7 @@
 
 <!-- Background layer -->
 <div class="min-h-dvh bg-app text-white">
+	<Navbar />
 	<!-- Page content -->
 	{@render children?.()}
 </div>

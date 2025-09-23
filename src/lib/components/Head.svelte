@@ -4,29 +4,16 @@
 
 	type ImageLike = string | { url: string; alt?: string; width?: number; height?: number };
 
-	type Props = {
-		title?: string;
-		description?: string;
-		image?: ImageLike;
-		type?: 'website' | 'article';
-		robots?: string;
-		keywords?: string[] | string;
-		canonical?: string;
-	};
-
-	const { title, description, image, type, robots, keywords, canonical } = $props<Props>();
-
-	// Derived values
-	const pageTitle = $derived(title ?? siteConfig.title);
-	const desc = $derived(description ?? siteConfig.description);
-	const kind = $derived(type ?? siteConfig.type);
-	const robotsContent = $derived(robots ?? siteConfig.robots);
-
-	const kw = $derived(() => {
-		if (Array.isArray(keywords)) return keywords;
-		if (typeof keywords === 'string') return [keywords];
-		return siteConfig.keywords;
-	});
+	// ✅ defaults make every prop optional to callers (<Head /> is valid)
+	let {
+		title = undefined,
+		description = undefined,
+		image = undefined,
+		type = undefined as 'website' | 'article' | undefined,
+		robots = undefined,
+		keywords = undefined as string[] | string | undefined,
+		canonical = undefined
+	} = $props();
 
 	function toAbsolute(urlOrPath: string): string {
 		try {
@@ -38,27 +25,53 @@
 		}
 	}
 
-	const img = $derived(() => {
-		const src: ImageLike = image ?? siteConfig.image;
-		if (typeof src === 'string') {
-			return {
-				url: toAbsolute(src),
-				alt: siteConfig.image.alt,
-				width: siteConfig.image.width,
-				height: siteConfig.image.height
-			};
-		}
-		return {
-			url: toAbsolute(src.url),
-			alt: src.alt ?? siteConfig.image.alt,
-			width: src.width ?? siteConfig.image.width,
-			height: src.height ?? siteConfig.image.height
-		};
+	// ✅ simple, unambiguous runes state
+	let pageTitle = $state(siteConfig.title);
+	let desc = $state(siteConfig.description);
+	let kind = $state<'website' | 'article'>(siteConfig.type);
+	let robotsContent = $state(siteConfig.robots);
+	let kw = $state<string[]>(siteConfig.keywords);
+	let img = $state<{ url: string; alt: string; width: number; height: number }>({
+		url: toAbsolute(siteConfig.image.url),
+		alt: siteConfig.image.alt,
+		width: siteConfig.image.width,
+		height: siteConfig.image.height
 	});
+	let canonicalHref = $state(`${siteConfig.url.replace(/\/$/, '')}${$page.url.pathname}`);
 
-	const canonicalHref = $derived(() =>
-		canonical ? toAbsolute(canonical) : `${siteConfig.url.replace(/\/$/, '')}${$page.url.pathname}`
-	);
+	// ✅ one place to derive everything
+	$effect(() => {
+		pageTitle = title ?? siteConfig.title;
+		desc = description ?? siteConfig.description;
+		kind = type ?? siteConfig.type;
+		robotsContent = robots ?? siteConfig.robots;
+
+		kw = Array.isArray(keywords)
+			? keywords
+			: typeof keywords === 'string'
+				? [keywords]
+				: siteConfig.keywords;
+
+		const src: ImageLike = image ?? siteConfig.image;
+		img =
+			typeof src === 'string'
+				? {
+						url: toAbsolute(src),
+						alt: siteConfig.image.alt,
+						width: siteConfig.image.width,
+						height: siteConfig.image.height
+					}
+				: {
+						url: toAbsolute(src.url),
+						alt: src.alt ?? siteConfig.image.alt,
+						width: src.width ?? siteConfig.image.width,
+						height: src.height ?? siteConfig.image.height
+					};
+
+		canonicalHref = canonical
+			? toAbsolute(canonical)
+			: `${siteConfig.url.replace(/\/$/, '')}${$page.url.pathname}`;
+	});
 </script>
 
 <svelte:head>
