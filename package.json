@@ -29,7 +29,8 @@
 		"clean:build": "node scripts/clean.mjs --build-only",
 		"clean:reports": "node scripts/clean.mjs --reports-only",
 		"clean:cache": "node scripts/clean.mjs --cache",
-		"clobber": "node scripts/clean.mjs --all"
+		"clobber": "node scripts/clean.mjs --all",
+		"metadata": "node scripts/build-content-index.mjs"
 	},
 	"devDependencies": {
 		"@axe-core/cli": "^4.10.2",

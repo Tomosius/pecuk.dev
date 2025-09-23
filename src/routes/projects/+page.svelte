@@ -1,5 +1,8 @@
 <script lang="ts">
-  const {} = $props<{}>();
+	const {} = $props<{}>();
+
+	// Creating dictionary for project tags
+	let technlogies = {};
 </script>
 
 <h1>Projects</h1>

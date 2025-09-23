@@ -1,0 +1,100 @@
+{
+  "generatedAt": "2025-09-23T18:56:04.364Z",
+  "counts": {
+    "total": 1,
+    "projects": 1,
+    "blog": 0
+  },
+  "items": [
+    {
+      "type": "project",
+      "slug": "house-price",
+      "title": "House Price Prediction",
+      "summary": "Regression on housing data with feature engineering.",
+      "date": "2025-03-10",
+      "cover": "/images/projects/house/cover.jpg",
+      "links": {
+        "repo": "https://github.com/you/house-price"
+      },
+      "tech": [
+        "python",
+        "pandas",
+        "numpy",
+        "scikit-learn",
+        "svelte",
+        "sveltekit",
+        "tailwindcss",
+        "vite"
+      ],
+      "keywords": [
+        "ml",
+        "regression",
+        "kaggle"
+      ],
+      "tokens": [
+        "house",
+        "price",
+        "prediction",
+        "regression",
+        "on",
+        "housing",
+        "data",
+        "with",
+        "feature",
+        "engineering",
+        "ml",
+        "kaggle",
+        "python",
+        "pandas",
+        "numpy",
+        "scikit-learn",
+        "svelte",
+        "sveltekit",
+        "tailwindcss",
+        "vite"
+      ]
+    }
+  ],
+  "byType": {
+    "project": [
+      "house-price"
+    ]
+  },
+  "byTech": {
+    "python": [
+      "house-price"
+    ],
+    "pandas": [
+      "house-price"
+    ],
+    "numpy": [
+      "house-price"
+    ],
+    "scikit-learn": [
+      "house-price"
+    ],
+    "svelte": [
+      "house-price"
+    ],
+    "sveltekit": [
+      "house-price"
+    ],
+    "tailwindcss": [
+      "house-price"
+    ],
+    "vite": [
+      "house-price"
+    ]
+  },
+  "byKeyword": {
+    "ml": [
+      "house-price"
+    ],
+    "regression": [
+      "house-price"
+    ],
+    "kaggle": [
+      "house-price"
+    ]
+  }
+}
