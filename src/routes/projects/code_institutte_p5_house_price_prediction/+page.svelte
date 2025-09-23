@@ -1,18 +1,44 @@
 <script lang="ts">
 	import ContentPage from '$lib/components/ContentPage.svelte';
-	import { defineMeta } from '$lib/content';
+	import { withRouteMeta } from '$lib/route-meta';
+	import { page } from '$app/stores';
+	import { base } from '$app/paths';
+	import { get } from 'svelte/store';
 
-	const meta = defineMeta({
-		type: 'project',
-		slug: 'code_institutte_p5_house_price_prediction',
-		title: 'House Price Prediction',
-		summary: 'Regression on housing data with feature engineering.',
-		date: '2025-03-10',
-		cover: '/images/projects/house/cover.jpg',
-		links: { repo: 'https://github.com/you/house-price' },
-		tech: ['python', 'pandas', 'numpy', 'scikit-learn'],
-		keywords: ['ml', 'regression', 'kaggle']
-	} as const);
+	const meta = withRouteMeta(
+		{
+			// no type/slug here — they’ll be inferred from the route
+			title: 'House Price Prediction',
+			summary: 'Regression on housing data with feature engineering.',
+			date: '2025-03-10',
+			cover: '/images/projects/house/cover.jpg',
+			links: { repo: 'https://github.com/you/house-price' },
+			tech: [
+				'python',
+				'pandas',
+				'numpy',
+				'scikit-learn',
+				'jupyter',
+				'plotly',
+				'matplotlib',
+				'seaborn',
+				'statsmodels',
+				'sklearn',
+				'scipy',
+				'git',
+				'github',
+				'joblib',
+				'catboost',
+				'xgboost',
+				'lightgbm',
+				'svm',
+				'lightgbm'
+			],
+			keywords: ['ml', 'regression', 'kaggle']
+		},
+		get(page).url.pathname,
+		base
+	);
 </script>
 
 <ContentPage {meta}>
