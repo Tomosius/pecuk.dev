@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2025-09-23T22:37:34.346Z",
+  "generatedAt": "2025-09-25T19:16:49.715Z",
   "items": [
     {
       "type": "project",
-      "slug": "code_institutte_p5_house_price_prediction",
+      "slug": "code_institute_p5_house_price_prediction",
       "title": "House Price Prediction",
       "summary": "Regression on housing data with feature engineering.",
       "date": "2025-03-10",
-      "cover": "/images/projects/house/cover.jpg",
+      "cover": "images/projects/code_institute_p5_heritage_houses/img.png",
       "links": {
         "repo": "https://github.com/you/house-price"
       },
@@ -21,7 +21,6 @@
         "matplotlib",
         "seaborn",
         "statsmodels",
-        "scikit-learn",
         "scipy",
         "git",
         "github",
@@ -44,7 +43,7 @@
       "title": "Svelte 5 + Tailwind: a Lean Setup",
       "summary": "Minimal, fast setup notes for Svelte 5 (runes) with Tailwind v4 and Vite.",
       "date": "2025-02-05",
-      "cover": "/images/blog/svelte5-tailwind/cover.jpg",
+      "cover": null,
       "links": {
         "repo": "https://github.com/Tomosius/your-repo"
       },
@@ -69,7 +68,7 @@
       "title": "DuckDB: First Steps",
       "summary": "Playground notes: reading CSV/Parquet locally and simple analytics queries.",
       "date": "2024-11-12",
-      "cover": "/images/blog/duckdb-first-steps/cover.jpg",
+      "cover": null,
       "links": {},
       "tech": [
         "duckdb",
@@ -90,7 +89,7 @@
       "title": "Cats vs Dogs: a Tiny CNN",
       "summary": "Quick baseline with Keras: data augmentation, small CNN, and validation curves.",
       "date": "2024-10-01",
-      "cover": "/images/blog/cats-vs-dogs/cover.jpg",
+      "cover": null,
       "links": {},
       "tech": [
         "python",
@@ -111,7 +110,7 @@
       "title": "Battleship — Python Terminal Game",
       "summary": "Terminal Battleship with adjustable map & fleet, simple AI, and deployment via Code Institute Heroku template.",
       "date": "2023-10-16",
-      "cover": "/images/projects/battleship/cover.jpg",
+      "cover": "images/projects/code_institute_p4_battleship/img.png",
       "links": {
         "repo": "https://github.com/Tomosius/Battleship-Portfolio-3",
         "demo": "https://battleship-p3-8833f01f29b3.herokuapp.com/"
@@ -134,11 +133,11 @@
     },
     {
       "type": "project",
-      "slug": "codce_institute_p1_vampyre",
+      "slug": "code_institute_p1_vampyre",
       "title": "Vampyre — HTML/CSS Site",
       "summary": "Multi-page responsive site about vampire lore, showcasing semantic HTML, custom CSS, accessibility and a simple 404.",
       "date": null,
-      "cover": "https://github.com/Tomosius/Vampyre/raw/main/assets/images/website_responsive.PNG",
+      "cover": "images/projects/code_institute_p1_vampyre/img.png",
       "links": {
         "repo": "https://github.com/Tomosius/Vampyre",
         "demo": "https://tomosius.github.io/Vampyre/"
@@ -165,7 +164,7 @@
       "title": "Hangman — Web Game",
       "summary": "Browser-based Hangman with difficulty levels, on-screen letter buttons, timer, and responsive UI.",
       "date": null,
-      "cover": "/images/projects/hangman/cover.jpg",
+      "cover": "images/projects/code_institute_p2_hangman/img.png",
       "links": {
         "repo": "https://github.com/Tomosius/P2-HangMan",
         "demo": "https://tomosius.github.io/P2-HangMan/"
@@ -191,7 +190,7 @@
       "title": "My Precious",
       "summary": "Community-driven lost & found platform: user auth, CRUD posts with photos & location, and private messaging.",
       "date": null,
-      "cover": "/images/projects/my-precious/cover.jpg",
+      "cover": "images/projects/code_institute_p3_my_precious/img.png",
       "links": {
         "repo": "https://github.com/Tomosius/My_Precious",
         "demo": "https://project-4-django-my-precious-180ebe0871af.herokuapp.com"

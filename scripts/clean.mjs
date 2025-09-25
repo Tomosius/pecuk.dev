@@ -12,9 +12,9 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const groups = {
-  build: ['build', '.svelte-kit'],
-  reports: ['.lighthouseci'],
-  cache: ['.vite', '.cache', '.eslintcache', '.parcel-cache', '.turbo']
+	build: ['build', '.svelte-kit'],
+	reports: ['.lighthouseci'],
+	cache: ['.vite', '.cache', '.eslintcache', '.parcel-cache', '.turbo']
 };
 
 const args = new Set(process.argv.slice(2));
@@ -28,12 +28,12 @@ if (args.has('--cache')) targets.push(...groups.cache);
 if (args.has('--all')) targets.push('node_modules', 'package-lock.json');
 
 const rm = (p) => {
-  try {
-    fs.rmSync(path.resolve(p), { recursive: true, force: true });
-    console.log(`removed ${p}`);
-  } catch (e) {
-    console.warn(`skip ${p}: ${e.message}`);
-  }
+	try {
+		fs.rmSync(path.resolve(p), { recursive: true, force: true });
+		console.log(`removed ${p}`);
+	} catch (e) {
+		console.warn(`skip ${p}: ${e.message}`);
+	}
 };
 
 [...new Set(targets)].forEach(rm);

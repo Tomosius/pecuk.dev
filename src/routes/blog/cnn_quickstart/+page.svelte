@@ -11,7 +11,6 @@
 			title: 'Cats vs Dogs: a Tiny CNN',
 			summary: 'Quick baseline with Keras: data augmentation, small CNN, and validation curves.',
 			date: '2024-10-01',
-			cover: '/images/blog/cats-vs-dogs/cover.jpg',
 			tech: ['python', 'tensorflow', 'keras', 'numpy'],
 			keywords: ['cnn', 'image-classification', 'keras', 'augmentation']
 		},
@@ -21,15 +20,13 @@
 </script>
 
 <ContentPage {meta}>
-	{#snippet children()}
-		<article class="prose max-w-none prose-invert">
-			<h2>Baseline</h2>
-			<p>Start with a tiny model, overfit a batch, then add augmentation and regularization.</p>
-			<h3>Notes</h3>
-			<ul>
-				<li>Use early stopping.</li>
-				<li>Track learning curves.</li>
-			</ul>
-		</article>
-	{/snippet}
+	<article class="prose max-w-none prose-invert">
+		<h2>Baseline</h2>
+		<p>Start with a tiny model, overfit a batch, then add augmentation and regularization.</p>
+		<h3>Notes</h3>
+		<ul>
+			<li>Use early stopping.</li>
+			<li>Track learning curves.</li>
+		</ul>
+	</article>
 </ContentPage>

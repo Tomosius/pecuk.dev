@@ -12,7 +12,6 @@
 			title: 'Svelte 5 + Tailwind: a Lean Setup',
 			summary: 'Minimal, fast setup notes for Svelte 5 (runes) with Tailwind v4 and Vite.',
 			date: '2025-02-05',
-			cover: '/images/blog/svelte5-tailwind/cover.jpg',
 			links: { repo: 'https://github.com/Tomosius/your-repo' },
 			tech: ['svelte', 'sveltekit', 'tailwindcss', 'vite', 'nodejs'],
 			keywords: ['svelte 5', 'runes', 'tailwind', 'setup', 'vite']
@@ -23,19 +22,15 @@
 </script>
 
 <ContentPage {meta}>
-	{#snippet children()}
-		<article class="prose max-w-none prose-invert">
-			<h2>Why this stack</h2>
-			<p>
-				Notes on Svelte 5 runes, Tailwind v4, and a few tips for keeping things fast and simple.
-			</p>
+	<article class="prose max-w-none prose-invert">
+		<h2>Why this stack</h2>
+		<p>Notes on Svelte 5 runes, Tailwind v4, and a few tips for keeping things fast and simple.</p>
 
-			<h3>Steps</h3>
-			<ol>
-				<li>Initialize SvelteKit.</li>
-				<li>Add Tailwind v4 and plugins.</li>
-				<li>Keep global CSS lean; move patterns to components.</li>
-			</ol>
-		</article>
-	{/snippet}
+		<h3>Steps</h3>
+		<ol>
+			<li>Initialize SvelteKit.</li>
+			<li>Add Tailwind v4 and plugins.</li>
+			<li>Keep global CSS lean; move patterns to components.</li>
+		</ol>
+	</article>
 </ContentPage>

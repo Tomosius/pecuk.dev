@@ -1,0 +1,225 @@
+{
+  "generatedAt": "2025-09-25T19:16:49.715Z",
+  "items": [
+    {
+      "type": "project",
+      "slug": "code_institute_p5_house_price_prediction",
+      "title": "House Price Prediction",
+      "summary": "Regression on housing data with feature engineering.",
+      "date": "2025-03-10",
+      "cover": "images/projects/code_institute_p5_heritage_houses/img.png",
+      "links": {
+        "repo": "https://github.com/you/house-price"
+      },
+      "tech": [
+        "python",
+        "pandas",
+        "numpy",
+        "scikit-learn",
+        "jupyter",
+        "plotly",
+        "matplotlib",
+        "seaborn",
+        "statsmodels",
+        "scipy",
+        "git",
+        "github",
+        "joblib",
+        "catboost",
+        "xgboost",
+        "lightgbm",
+        "svm",
+        "lightgbm"
+      ],
+      "keywords": [
+        "ml",
+        "regression",
+        "kaggle"
+      ]
+    },
+    {
+      "type": "blog",
+      "slug": "svelte_5_+runes",
+      "title": "Svelte 5 + Tailwind: a Lean Setup",
+      "summary": "Minimal, fast setup notes for Svelte 5 (runes) with Tailwind v4 and Vite.",
+      "date": "2025-02-05",
+      "cover": null,
+      "links": {
+        "repo": "https://github.com/Tomosius/your-repo"
+      },
+      "tech": [
+        "svelte",
+        "sveltekit",
+        "tailwindcss",
+        "vite",
+        "nodejs"
+      ],
+      "keywords": [
+        "svelte 5",
+        "runes",
+        "tailwind",
+        "setup",
+        "vite"
+      ]
+    },
+    {
+      "type": "blog",
+      "slug": "duckdb_first_steps",
+      "title": "DuckDB: First Steps",
+      "summary": "Playground notes: reading CSV/Parquet locally and simple analytics queries.",
+      "date": "2024-11-12",
+      "cover": null,
+      "links": {},
+      "tech": [
+        "duckdb",
+        "python",
+        "pandas"
+      ],
+      "keywords": [
+        "duckdb",
+        "analytics",
+        "sql",
+        "parquet",
+        "csv"
+      ]
+    },
+    {
+      "type": "blog",
+      "slug": "cnn_quickstart",
+      "title": "Cats vs Dogs: a Tiny CNN",
+      "summary": "Quick baseline with Keras: data augmentation, small CNN, and validation curves.",
+      "date": "2024-10-01",
+      "cover": null,
+      "links": {},
+      "tech": [
+        "python",
+        "tensorflow",
+        "keras",
+        "numpy"
+      ],
+      "keywords": [
+        "cnn",
+        "image-classification",
+        "keras",
+        "augmentation"
+      ]
+    },
+    {
+      "type": "project",
+      "slug": "code_institute_p3_battleship",
+      "title": "Battleship — Python Terminal Game",
+      "summary": "Terminal Battleship with adjustable map & fleet, simple AI, and deployment via Code Institute Heroku template.",
+      "date": "2023-10-16",
+      "cover": "images/projects/code_institute_p4_battleship/img.png",
+      "links": {
+        "repo": "https://github.com/Tomosius/Battleship-Portfolio-3",
+        "demo": "https://battleship-p3-8833f01f29b3.herokuapp.com/"
+      },
+      "tech": [
+        "python",
+        "git",
+        "github"
+      ],
+      "keywords": [
+        "battleship",
+        "terminal",
+        "game",
+        "heroku",
+        "code institute",
+        "ai",
+        "maps",
+        "fleet"
+      ]
+    },
+    {
+      "type": "project",
+      "slug": "code_institute_p1_vampyre",
+      "title": "Vampyre — HTML/CSS Site",
+      "summary": "Multi-page responsive site about vampire lore, showcasing semantic HTML, custom CSS, accessibility and a simple 404.",
+      "date": null,
+      "cover": "images/projects/code_institute_p1_vampyre/img.png",
+      "links": {
+        "repo": "https://github.com/Tomosius/Vampyre",
+        "demo": "https://tomosius.github.io/Vampyre/"
+      },
+      "tech": [
+        "html",
+        "css",
+        "git",
+        "github"
+      ],
+      "keywords": [
+        "vampires",
+        "portfolio",
+        "responsive",
+        "accessibility",
+        "google fonts",
+        "font awesome",
+        "code institute"
+      ]
+    },
+    {
+      "type": "project",
+      "slug": "code_institute_p2_hangman",
+      "title": "Hangman — Web Game",
+      "summary": "Browser-based Hangman with difficulty levels, on-screen letter buttons, timer, and responsive UI.",
+      "date": null,
+      "cover": "images/projects/code_institute_p2_hangman/img.png",
+      "links": {
+        "repo": "https://github.com/Tomosius/P2-HangMan",
+        "demo": "https://tomosius.github.io/P2-HangMan/"
+      },
+      "tech": [
+        "html",
+        "css",
+        "javascript",
+        "git",
+        "github"
+      ],
+      "keywords": [
+        "hangman",
+        "javascript",
+        "game",
+        "github pages",
+        "ui"
+      ]
+    },
+    {
+      "type": "project",
+      "slug": "code_institute_p4_my_precious",
+      "title": "My Precious",
+      "summary": "Community-driven lost & found platform: user auth, CRUD posts with photos & location, and private messaging.",
+      "date": null,
+      "cover": "images/projects/code_institute_p3_my_precious/img.png",
+      "links": {
+        "repo": "https://github.com/Tomosius/My_Precious",
+        "demo": "https://project-4-django-my-precious-180ebe0871af.herokuapp.com"
+      },
+      "tech": [
+        "python",
+        "html",
+        "css",
+        "github",
+        "git",
+        "javascript",
+        "django",
+        "jinja2",
+        "ajax",
+        "postgresql",
+        "sql",
+        "sqlalchemy",
+        "altair"
+      ],
+      "keywords": [
+        "django",
+        "lost-and-found",
+        "crud",
+        "authentication",
+        "messaging",
+        "heroku",
+        "sql",
+        "cloudinary"
+      ]
+    }
+  ]
+}

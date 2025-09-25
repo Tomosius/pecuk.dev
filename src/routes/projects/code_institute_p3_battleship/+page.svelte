@@ -14,7 +14,7 @@
 			summary:
 				'Terminal Battleship with adjustable map & fleet, simple AI, and deployment via Code Institute Heroku template.',
 			date: '2023-10-16',
-			cover: '/images/projects/battleship/cover.jpg',
+			cover: 'images/projects/code_institute_p4_battleship/img.png',
 			links: {
 				repo: 'https://github.com/Tomosius/Battleship-Portfolio-3',
 				demo: 'https://battleship-p3-8833f01f29b3.herokuapp.com/'
@@ -38,10 +38,8 @@
 </script>
 
 <ContentPage {meta}>
-	{#snippet children()}
-		<section class="prose max-w-none prose-invert">
-			<h2>Overview</h2>
-			<p>…</p>
-		</section>
-	{/snippet}
+	<section class="prose max-w-none prose-invert">
+		<h2>Overview</h2>
+		<p>…</p>
+	</section>
 </ContentPage>

@@ -96,7 +96,7 @@
 	</section>
 
 	<!-- “HERO ART” PLACEHOLDER -->
-	<section class="mt-12 md:mt-16" aria-label="Visual showcase">
+	<section class="mt-12 md:mt-16" aria-labelledby="Visual showcase">
 		<div
 			class="rounded-3xl border border-white/10 bg-gradient-to-b from-white/5 to-white/[0.03] p-1"
 		>
@@ -129,7 +129,7 @@
 			{#each stats as s (s.label)}
 				<div
 					class="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 text-center"
-					aria-label={s.label}
+					aria-labelledby={s.label}
 				>
 					<div class="text-xl font-semibold text-[var(--accent-soft)]">{s.value}</div>
 					<div class="text-sm opacity-80">{s.label}</div>

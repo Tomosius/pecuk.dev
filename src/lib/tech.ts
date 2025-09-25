@@ -698,17 +698,32 @@ export const TECHNOLOGIES = {
 	}
 } as const;
 
+// add/extend the readonly shape to include the optional fields TechStack uses
+type TechInfoRO = {
+	readonly label: string;
+	readonly kind: TechKind;
+	readonly aliases?: readonly string[];
+	readonly scopes?: readonly TechScope[];
+	readonly tags?: readonly string[];
+	readonly url?: string;
+	readonly description?: string;
+	readonly icon?: unknown; // (emoji, component, etc. — keep it loose)
+};
+
+// keep the rest exactly as before
+const T = TECHNOLOGIES as Record<keyof typeof TECHNOLOGIES, TechInfoRO>;
+
 export type TechId = keyof typeof TECHNOLOGIES;
-export type TechEntry = Readonly<TechInfo> & { readonly id: TechId };
+export type TechEntry = TechInfoRO & { readonly id: TechId };
 
 /** 1) Fast display: id -> label (string) */
 export function techLabel(id: TechId): string {
-	return TECHNOLOGIES[id]?.label ?? String(id);
+	return T[id]?.label ?? String(id);
 }
 
 /** 2) Full dictionary: id -> entry (object) */
 export function getTech(id: TechId): TechEntry {
-	const e = TECHNOLOGIES[id];
+	const e = T[id];
 	return { id, ...e };
 }
 
@@ -727,15 +742,16 @@ export function getTechMany(ids: readonly TechId[]): TechEntry[] {
 export function groupByKind(ids: readonly TechId[]) {
 	const m = new Map<TechKind, TechId[]>();
 	for (const id of ids) {
-		const k = TECHNOLOGIES[id].kind;
+		const k = T[id].kind;
 		(m.get(k) ?? m.set(k, []).get(k)!).push(id);
 	}
 	return m;
 }
+
 export function groupByScope(ids: readonly TechId[]) {
 	const m = new Map<TechScope, TechId[]>();
 	for (const id of ids) {
-		for (const s of TECHNOLOGIES[id].scopes ?? []) {
+		for (const s of T[id].scopes ?? []) {
 			(m.get(s) ?? m.set(s, []).get(s)!).push(id);
 		}
 	}

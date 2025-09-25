@@ -13,18 +13,21 @@
 	let allTech = $state<string[]>([]); // unique tech list for chips
 
 	// load once
-	$effect(async () => {
-		const { items } = await loadIndex();
-		allProjects = items.filter((i) => i.type === 'project');
+	$effect(() => {
+		(async () => {
+			const { items } = await loadIndex();
 
-		// build unique tech list
-		const set = new Set<string>();
-		for (const it of allProjects) for (const t of it.tech) set.add(t);
-		allTech = Array.from(set).sort();
+			allProjects = items.filter((i) => i.type === 'project');
 
-		// initial view
-		results = allProjects;
-		loading = false;
+			// build unique tech list (safe for items with missing tech)
+			const set = new Set<string>();
+			for (const it of allProjects) for (const t of it.tech ?? []) set.add(t);
+			allTech = Array.from(set).sort();
+
+			// initial view
+			results = allProjects;
+			loading = false;
+		})();
 	});
 
 	// recompute whenever q / selectedTech changes
@@ -68,6 +71,8 @@
 	<!-- Filters -->
 	<div class="flex flex-wrap items-center gap-3">
 		<input
+			type="search"
+			aria-label="Search projects"
 			placeholder="Search projects…"
 			bind:value={q}
 			class="rounded-xl border border-white/10 bg-white/10 px-4 py-2 placeholder-white/40
@@ -77,6 +82,7 @@
 		<div class="flex flex-wrap gap-2">
 			{#each allTech as t (t)}
 				<button
+					type="button"
 					class="rounded-lg border px-2 py-1 text-sm transition
                  {selectedTech.includes(t)
 						? 'border-[var(--accent)]/40 bg-[var(--accent)]/15'
@@ -88,7 +94,9 @@
 			{/each}
 
 			{#if selectedTech.length}
-				<button class="text-sm underline opacity-80" onclick={clearFilters}> Clear </button>
+				<button type="button" class="text-sm underline opacity-80" onclick={clearFilters}>
+					Clear
+				</button>
 			{/if}
 		</div>
 	</div>

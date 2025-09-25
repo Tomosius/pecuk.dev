@@ -38,7 +38,7 @@
 			</a>
 
 			<!-- Desktop links -->
-			<nav class="ml-1 hidden items-center gap-1 md:flex">
+			<nav class="ml-1 hidden items-center gap-1 md:flex" aria-label="Primary navigation">
 				{#each links as l, i (l.href + '-' + i)}
 					<a
 						href={l.href}
@@ -54,6 +54,7 @@
 
 			<div class="ml-auto flex items-center gap-2">
 				<button
+					type="button"
 					class="rounded-xl border border-white/15 bg-white/5 px-3 py-1.5 transition hover:bg-white/10 md:hidden"
 					onclick={() => (open = !open)}
 					aria-label="Toggle menu"
