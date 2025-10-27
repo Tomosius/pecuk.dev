@@ -1,0 +1,12 @@
+{
+	"$schema": "https://unpkg.com/knip/schema.json",
+	"ignore": [".svelte-kit/**", "build/**", "dist/**"],
+	"entry": [
+		"src/**/*",
+		"tests/**/*",
+		"config/**/*",
+		"scripts/**/*",
+		"vite.config.ts",
+		"svelte.config.js"
+	]
+}
