@@ -4,8 +4,7 @@ export const SITE_URL = 'https://pecuk.dev';
 export const SITE_NAME = 'pecuk.dev';
 export const AUTHOR = 'Tomas Pecukevicius';
 export const THEME_COLOR = '#0ea5e9';
-export const DEFAULT_DESCRIPTION =
-	'Personal website of Tomas Pecukevicius — software developer.';
+export const DEFAULT_DESCRIPTION = 'Personal website of Tomas Pecukevicius — software developer.';
 
 export const SOCIALS = {
 	github: 'https://github.com/Tomosius',

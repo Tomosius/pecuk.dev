@@ -1,7 +1,6 @@
-<!-- src/lib/components/Head.svelte -->
-<script lang="ts">
+<script>
 	let { data } = $props();
-	const { baseMetaTags, baseJsonLd } = data;
+	const { baseMetaTags, baseJsonLd = [] } = data;
 </script>
 
 <svelte:head>
@@ -26,7 +25,9 @@
 	<meta name="twitter:description" content={baseMetaTags.openGraph.description} />
 
 	<!-- JSON-LD -->
-	{#each baseJsonLd as item}
-		<script type="application/ld+json">{JSON.stringify(item)}</script>
+	{#each baseJsonLd as item, i (i)}
+		<script type="application/ld+json">
+{JSON.stringify(item).replace(/</g, '\\u003c')}
+		</script>
 	{/each}
 </svelte:head>

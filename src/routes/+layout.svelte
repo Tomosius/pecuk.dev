@@ -6,5 +6,6 @@
 	let { data, children } = $props();
 </script>
 
-<Head {data} /> <!-- ✅ pass data to Head -->
+<Head {data} />
+<!-- ✅ pass data to Head -->
 {@render children?.()}

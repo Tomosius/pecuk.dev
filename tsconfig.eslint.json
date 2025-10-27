@@ -1,28 +1,28 @@
 {
-  "extends": "./tsconfig.json",
-  "compilerOptions": { "noEmit": true },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.svelte",
+	"extends": "./tsconfig.json",
+	"compilerOptions": { "noEmit": true },
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.svelte",
 
-    "tests/**/*.ts",
-    "tests/**/*.mts",
-    "tests/**/*.cts",
+		"tests/**/*.ts",
+		"tests/**/*.mts",
+		"tests/**/*.cts",
 
-    "config/**/*.ts",
-    "config/**/*.mts",
-    "config/**/*.cts",
-    "scripts/**/*.ts",
-    "scripts/**/*.mts",
-    "scripts/**/*.cts",
+		"config/**/*.ts",
+		"config/**/*.mts",
+		"config/**/*.cts",
+		"scripts/**/*.ts",
+		"scripts/**/*.mts",
+		"scripts/**/*.cts",
 
-    "vite.config.ts",
-    "playwright.config.ts",
-    "playwright.config.mts",
-    "playwright.config.cts",
-    "pwa.specs.ts",
-    "robots-sitemap.spec.ts",
-    "vitest.config.ts"
-  ],
-  "exclude": ["node_modules", ".svelte-kit", "build", "dist"]
+		"vite.config.ts",
+		"playwright.config.ts",
+		"playwright.config.mts",
+		"playwright.config.cts",
+		"pwa.specs.ts",
+		"robots-sitemap.spec.ts",
+		"vitest.config.ts"
+	],
+	"exclude": ["node_modules", ".svelte-kit", "build", "dist"]
 }

@@ -1,13 +1,13 @@
 {
-  "ci": {
-    "collect": {
-      "staticDistDir": "build",
-      "url": ["/"],
-      "numberOfRuns": 1
-    },
-    "assert": {
-      "budgetsFile": "config/lighthouse-budgets.json"
-    },
-    "upload": { "target": "temporary-public-storage" }
-  }
+	"ci": {
+		"collect": {
+			"staticDistDir": "build",
+			"url": ["/"],
+			"numberOfRuns": 1
+		},
+		"assert": {
+			"budgetsFile": "config/lighthouse-budgets.json"
+		},
+		"upload": { "target": "temporary-public-storage" }
+	}
 }
