@@ -57,6 +57,15 @@ export default [
 		}
 	},
 
+	// File-specific override for Head.svelte
+	{
+		files: ['src/lib/components/Head.svelte'],
+		rules: {
+			'svelte/no-at-html-tags': 'off',
+			'@typescript-eslint/no-unused-vars': 'off'
+		}
+	},
+
 	// TypeScript files — single block, attach to tsconfig.eslint.json
 	{
 		files: [

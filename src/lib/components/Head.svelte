@@ -1,6 +1,9 @@
 <script>
 	let { data } = $props();
-	const { baseMetaTags, baseJsonLd = [] } = data;
+	const { baseMetaTags, baseJsonLd } = data;
+
+	// Satisfy <svelte:element>'s `this` requirement (must be an expression)
+	const scriptTag = 'script';
 </script>
 
 <svelte:head>
@@ -26,8 +29,8 @@
 
 	<!-- JSON-LD -->
 	{#each baseJsonLd as item, i (i)}
-		<script type="application/ld+json">
-{JSON.stringify(item).replace(/</g, '\\u003c')}
-		</script>
+		<svelte:element this={scriptTag} type="application/ld+json">
+			{JSON.stringify(item).replace(/</g, '\\u003c')}
+		</svelte:element>
 	{/each}
 </svelte:head>
