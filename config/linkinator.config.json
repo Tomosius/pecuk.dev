@@ -1,0 +1,7 @@
+{
+	"recurse": true,
+	"concurrency": 20,
+	"timeout": 120000,
+	"verbosity": "ERROR",
+	"skip": ["^mailto:", "^tel:", "^data:", "^#"]
+}

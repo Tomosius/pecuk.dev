@@ -1,0 +1,16 @@
+../node_modules
+../.svelte-kit
+../build
+../.lighthouseci
+../test-results
+../tests
+# Package Managers
+../package-lock.json
+../pnpm-lock.yaml
+../yarn.lock
+../bun.lock
+../bun.lockb
+
+# Miscellaneous
+../static/
+../src/app.html
