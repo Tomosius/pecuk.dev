@@ -4,18 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="ci(improvements): task&#10;&#10;creat Taskfile.yml for task">
-      <change afterPath="$PROJECT_DIR$/src/routes/blog/+layout.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/blog/+layout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/blog/test/+layout.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/blog/test/+layout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/blog/test/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.svelte" afterDir="false" />
+    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="fix(seo): &#10;&#10;testing seo nesting capabilities">
+      <change afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/theme.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/brand/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stylelintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stylelintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintrc.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskfile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Head.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Head.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/test/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/test/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/test/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +35,9 @@
       <list>
         <option value="+layout" />
         <option value="+page" />
+        <option value="Backgrount" />
+        <option value="TypeScript File" />
+        <option value="Navbar" />
       </list>
     </option>
   </component>
@@ -56,6 +67,9 @@
     &quot;accountId&quot;: &quot;258d4196-9b57-442a-b46d-edc22ba2cd05&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -74,7 +88,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "reformat",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/src/routes/blog/blog1",
+    "last_opened_file_path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/static/brand",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -82,7 +96,7 @@
     "node.js.selected.package.stylelint": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/stylelint",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -93,6 +107,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static/brand" />
       <recent name="$PROJECT_DIR$/src/routes/blog/blog1" />
       <recent name="$PROJECT_DIR$/src/routes/blog" />
     </key>
@@ -114,7 +129,11 @@
       <workItem from="1761672085152" duration="4206000" />
       <workItem from="1761676315823" duration="1380000" />
       <workItem from="1761679365556" duration="269000" />
-      <workItem from="1761679644774" duration="6286000" />
+      <workItem from="1761679644774" duration="7813000" />
+      <workItem from="1761687959283" duration="21000" />
+      <workItem from="1761688485116" duration="104000" />
+      <workItem from="1761688598726" duration="3128000" />
+      <workItem from="1761691748414" duration="1559000" />
     </task>
     <task id="LOCAL-00001" summary="ci: &#10;&#10;remove cocogitto">
       <option name="closed" value="true" />
@@ -148,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761679831207</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix(seo): &#10;&#10;testing seo nesting capabilities">
+      <option name="closed" value="true" />
+      <created>1761686059008</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761686059008</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +196,7 @@
     <MESSAGE value="ci: &#10;&#10;remove cocogitto" />
     <MESSAGE value="refactor: &#10;&#10;delete all files" />
     <MESSAGE value="ci(improvements): task&#10;&#10;creat Taskfile.yml for task" />
-    <option name="LAST_COMMIT_MESSAGE" value="ci(improvements): task&#10;&#10;creat Taskfile.yml for task" />
+    <MESSAGE value="fix(seo): &#10;&#10;testing seo nesting capabilities" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(seo): &#10;&#10;testing seo nesting capabilities" />
   </component>
 </project>

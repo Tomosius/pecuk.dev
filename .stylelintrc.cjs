@@ -40,7 +40,7 @@ module.exports = {
 		],
 
 		// Performance
-		'plugin/no-low-performance-animation-properties': [true, { ignore: ['filter'] }],
+        'plugin/no-low-performance-animation-properties': [true, { ignoreProperties: ['filter'] }],
 
 		// Token discipline (encourage variables/tokens for key props)
 		'scale-unlimited/declaration-strict-value': [

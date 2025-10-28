@@ -1,1 +1,1 @@
-<p> kolia automatas</p>
+<p>kolia automatas</p>
