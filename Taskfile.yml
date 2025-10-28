@@ -1,0 +1,221 @@
+version: "3"
+
+# Global variables
+vars:
+  NODE: "npx"
+  PORT: 4173
+
+# Default task
+tasks:
+  default:
+    desc: "Start development mode (SvelteKit)"
+    cmds:
+      - "{{.NODE}} vite dev"
+    sources:
+      - src/**/*
+    watch: true
+
+  # ===============================
+  # ⚙️ Core build & dev
+  # ===============================
+
+  dev:
+    desc: "Run dev server with live reload"
+    cmds:
+      - "{{.NODE}} vite dev"
+    watch: true
+
+  build:
+    desc: "Build production bundle"
+    cmds:
+      - "{{.NODE}} vite build"
+
+  preview:
+    desc: "Preview production build"
+    deps: [build]
+    cmds:
+      - "{{.NODE}} vite preview"
+
+  serve:
+    desc: "Serve production build"
+    deps: [build]
+    cmds:
+      - "{{.NODE}} serve -s build -l {{.PORT}}"
+
+  # ===============================
+  # 🧹 Linting & formatting
+  # ===============================
+
+  lint:
+    desc: "Run all linters in parallel"
+    cmds:
+      - task: lint:ts
+      - task: lint:css
+      - task: lint:json
+      - task: lint:yaml
+
+  lint:ts:
+    desc: "Lint TypeScript & Svelte files"
+    cmds:
+      - "{{.NODE}} eslint . --ext .ts,.svelte --max-warnings=0"
+
+  lint:css:
+    desc: "Lint CSS and Svelte style blocks"
+    cmds:
+      - '{{.NODE}} stylelint "src/**/*.{css,svelte}" --cache --report-needless-disables'
+
+  lint:json:
+    desc: "Lint JSON files"
+    cmds:
+      - "{{.NODE}} eslint . --ext .json,.jsonc"
+
+  lint:yaml:
+    desc: "Lint YAML files"
+    cmds:
+      - "{{.NODE}} eslint . --ext .yml,.yaml"
+
+  format:
+    desc: "Run Prettier formatter"
+    cmds:
+      - '{{.NODE}} prettier --config config/.prettierrc --ignore-path config/.prettierignore --write .'
+
+  format:check:
+    desc: "Check formatting only"
+    cmds:
+      - '{{.NODE}} prettier --config config/.prettierrc --ignore-path config/.prettierignore --check .'
+
+  # ===============================
+  # 🧪 Testing
+  # ===============================
+
+  test:
+    desc: "Run all tests (unit + e2e)"
+    cmds:
+      - task: test:unit
+      - task: test:e2e
+
+  test:unit:
+    desc: "Run unit tests with Vitest"
+    cmds:
+      - "{{.NODE}} vitest run"
+
+  test:unit:watch:
+    desc: "Run unit tests in watch mode"
+    cmds:
+      - "{{.NODE}} vitest"
+
+  test:e2e:
+    desc: "Run end-to-end tests with Playwright"
+    cmds:
+      - '{{.NODE}} playwright test -c config/playwright.config.ts'
+
+  test:e2e:ui:
+    desc: "Run Playwright tests with UI"
+    cmds:
+      - '{{.NODE}} playwright test -c config/playwright.config.ts --ui'
+
+  # ===============================
+  # 🧠 Type & validation checks
+  # ===============================
+
+  typecheck:
+    desc: "Run TypeScript & SvelteKit type checks"
+    cmds:
+      - "{{.NODE}} svelte-kit sync && {{.NODE}} svelte-check --tsconfig ./tsconfig.json --fail-on-warnings"
+
+  validate:
+    desc: "Run all validation steps"
+    deps: [build]
+    cmds:
+      - task: lint:html
+      - task: validate:html
+      - task: validate:css
+      - task: validate:grammar
+
+  lint:html:
+    desc: "Validate HTML files in dist"
+    cmds:
+      - '{{.NODE}} html-validate --config config/html-validate.json --formatter stylish "build/**/*.html"'
+
+  validate:html:
+    desc: "Run vnu HTML validator"
+    cmds:
+      - "{{.NODE}} vnu --errors-only --skip-non-html build"
+
+  validate:css:
+    desc: "Lint and validate built CSS"
+    cmds:
+      - '{{.NODE}} stylelint "build/_app/**/*.css" --config .stylelintrc.dist.cjs --ignore-path .stylelintignore.dist'
+
+  validate:grammar:
+    desc: "Run CSS grammar validation script"
+    cmds:
+      - "node scripts/validate-css-grammar.mjs"
+
+  # ===============================
+  # 🚀 Deployment / Audit / CI
+  # ===============================
+
+  audit:seo:
+    desc: "Run Lighthouse SEO audits"
+    cmds:
+      - "{{.NODE}} lhci autorun --config=config/lighthouserc.json"
+
+  audit:seo:budgets:
+    desc: "Run Lighthouse budget audits"
+    cmds:
+      - "{{.NODE}} lhci autorun --config=config/lhci.budgets.json"
+
+  audit:seo:all:
+    desc: "Run all SEO audits"
+    cmds:
+      - task: audit:seo
+      - task: audit:seo:budgets
+
+  ci:
+    desc: "Run full CI pipeline"
+    cmds:
+      - task: build
+      - task: lint
+      - task: validate
+      - task: test:e2e
+      - task: audit:seo:all
+
+  qa:
+    desc: "Full QA suite (types, lint, tests, validation, SEO)"
+    cmds:
+      - task: typecheck
+      - task: lint
+      - task: validate
+      - task: test:e2e
+      - task: audit:seo:all
+
+  # ===============================
+  # 🧩 Maintenance
+  # ===============================
+
+  deps:audit:
+    desc: "Audit NPM dependencies"
+    cmds:
+      - "npm audit --omit=dev || true"
+
+  deps:update:
+    desc: "Check for outdated dependencies"
+    cmds:
+      - "npx npm-check-updates"
+
+  deadcode:
+    desc: "Check for unused exports/files"
+    cmds:
+      - "npx ts-prune -p tsconfig.json"
+      - "npx knip"
+
+  spellcheck:
+    desc: "Run spellchecker"
+    cmds:
+      - "npx cspell lint ."
+
+  svg:optimize:
+    desc: "Optimize SVG files in static/"
+    cmds:
+      - "npx svgo -f static -r"

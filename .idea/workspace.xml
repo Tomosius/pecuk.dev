@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="refactor: &#10;&#10;delete all files" />
+    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="refactor: &#10;&#10;delete all files">
+      <change afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +56,7 @@
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.stylelint": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/stylelint",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -79,6 +83,7 @@
       <updated>1761672084054</updated>
       <workItem from="1761672085152" duration="4206000" />
       <workItem from="1761676315823" duration="1380000" />
+      <workItem from="1761679365556" duration="269000" />
     </task>
     <task id="LOCAL-00001" summary="ci: &#10;&#10;remove cocogitto">
       <option name="closed" value="true" />
