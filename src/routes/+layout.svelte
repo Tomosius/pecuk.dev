@@ -1,11 +1,9 @@
-<!-- src/routes/+layout.svelte -->
 <script lang="ts">
 	import '../app.css';
-	import Head from '$lib/components/Head.svelte'; // ✅ make sure path is correct
+	import Head from '$lib/components/Head.svelte';
 
-	let { data, children } = $props();
+	let { children } = $props();
 </script>
 
-<Head {data} />
-<!-- ✅ pass data to Head -->
+<Head /> <!-- only once here -->
 {@render children?.()}

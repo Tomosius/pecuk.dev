@@ -1,0 +1,1 @@
+<p> kolia automatas</p>

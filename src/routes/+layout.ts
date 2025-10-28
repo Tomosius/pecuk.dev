@@ -1,4 +1,3 @@
-// src/routes/+layout.ts
 import {
 	SITE_URL,
 	SITE_NAME,
@@ -46,5 +45,11 @@ export const load = () => {
 		}
 	];
 
-	return { baseMetaTags, baseJsonLd, siteUrl: SITE_URL };
+	return {
+		baseMetaTags,
+		baseJsonLd,
+		siteUrl: SITE_URL,
+		seoMetaStack: [baseMetaTags],
+		seoJsonLdStack: [...baseJsonLd]
+	};
 };

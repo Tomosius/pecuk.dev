@@ -4,17 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="refactor: &#10;&#10;delete all files">
-      <change afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="ci(improvements): task&#10;&#10;creat Taskfile.yml for task">
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/+layout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/test/+layout.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/test/+layout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/test/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Head.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Head.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="+layout" />
+        <option value="+page" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -52,6 +74,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "reformat",
     "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/src/routes/blog/blog1",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -61,12 +84,19 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes/blog/blog1" />
+      <recent name="$PROJECT_DIR$/src/routes/blog" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,6 +114,7 @@
       <workItem from="1761672085152" duration="4206000" />
       <workItem from="1761676315823" duration="1380000" />
       <workItem from="1761679365556" duration="269000" />
+      <workItem from="1761679644774" duration="6286000" />
     </task>
     <task id="LOCAL-00001" summary="ci: &#10;&#10;remove cocogitto">
       <option name="closed" value="true" />
@@ -109,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761678905235</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ci(improvements): task&#10;&#10;creat Taskfile.yml for task">
+      <option name="closed" value="true" />
+      <created>1761679831207</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761679831207</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +168,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ci: &#10;&#10;remove cocogitto" />
     <MESSAGE value="refactor: &#10;&#10;delete all files" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: &#10;&#10;delete all files" />
+    <MESSAGE value="ci(improvements): task&#10;&#10;creat Taskfile.yml for task" />
+    <option name="LAST_COMMIT_MESSAGE" value="ci(improvements): task&#10;&#10;creat Taskfile.yml for task" />
   </component>
 </project>
