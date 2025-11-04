@@ -5,7 +5,6 @@ vars:
   NODE: 'npx'
   PORT: 4173
 
-# Default task
 tasks:
   default:
     desc: 'Start development mode (SvelteKit)'
@@ -15,10 +14,7 @@ tasks:
       - src/**/*
     watch: true
 
-  # ===============================
   # ⚙️ Core build & dev
-  # ===============================
-
   dev:
     desc: 'Run dev server with live reload'
     cmds:
@@ -42,10 +38,7 @@ tasks:
     cmds:
       - '{{.NODE}} serve -s build -l {{.PORT}}'
 
-  # ===============================
   # 🧹 Linting & formatting
-  # ===============================
-
   lint:
     desc: 'Run all linters in parallel'
     cmds:
@@ -84,10 +77,7 @@ tasks:
     cmds:
       - '{{.NODE}} prettier --config config/.prettierrc --ignore-path config/.prettierignore --check .'
 
-  # ===============================
   # 🧪 Testing
-  # ===============================
-
   test:
     desc: 'Run all tests (unit + e2e)'
     cmds:
@@ -114,10 +104,7 @@ tasks:
     cmds:
       - '{{.NODE}} playwright test -c config/playwright.config.ts --ui'
 
-  # ===============================
   # 🧠 Type & validation checks
-  # ===============================
-
   typecheck:
     desc: 'Run TypeScript & SvelteKit type checks'
     cmds:
@@ -140,7 +127,7 @@ tasks:
   validate:html:
     desc: 'Run vnu HTML validator'
     cmds:
-      - '{{.NODE}} vnu --errors-only --skip-non-html build'
+      - 'java -jar node_modules/vnu-jar/build/dist/vnu.jar --errors-only --skip-non-html build'
 
   validate:css:
     desc: 'Lint and validate built CSS'
@@ -152,10 +139,7 @@ tasks:
     cmds:
       - 'node scripts/validate-css-grammar.mjs'
 
-  # ===============================
   # 🚀 Deployment / Audit / CI
-  # ===============================
-
   audit:seo:
     desc: 'Run Lighthouse SEO audits'
     cmds:
@@ -190,10 +174,7 @@ tasks:
       - task: test:e2e
       - task: audit:seo:all
 
-  # ===============================
   # 🧩 Maintenance
-  # ===============================
-
   deps:audit:
     desc: 'Audit NPM dependencies'
     cmds:

@@ -109,7 +109,8 @@
 		"typescript": "^5.9.2",
 		"typescript-eslint": "^8.45.0",
 		"vite": "^7.0.4",
-		"vitest": "^3.2.4"
+		"vitest": "^3.2.4",
+		"vnu-jar": "^25.11.4"
 	},
 	"overrides": {
 		"cookie": "^0.7.0",
