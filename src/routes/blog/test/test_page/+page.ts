@@ -1,6 +1,18 @@
 import type { PageLoad } from './$types';
 import type { MetaTags } from '$lib';
 
+
+export const _indexEntry = {
+	type: 'blog', // or 'project' | 'study'
+	slug: 'future-of-sveltekit',
+	title: 'Tomosius',
+	description: 'A deep dive into SvelteKit 5, the Runes API...',
+	tags: ['sveltekit', 'runes', 'frontend'],
+	image: '/og-images/future-of-sveltekit.png'
+	// date: '2025-10-15'
+};
+
+
 export const load: PageLoad = async ({ parent }) => {
 	// Get SEO base data from the parent (blog layout)
 	const { metaTags: blogMeta } = await parent();

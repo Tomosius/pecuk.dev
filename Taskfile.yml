@@ -21,8 +21,14 @@ tasks:
       - '{{.NODE}} vite dev'
     watch: true
 
+  prebuild:
+    desc: 'Generate content index before build'
+    cmds:
+      - 'node scripts/build-content-index.mjs'
+
   build:
     desc: 'Build production bundle'
+    deps: [prebuild]
     cmds:
       - '{{.NODE}} vite build'
 

@@ -5,17 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="feat(ui): NavBar&#10;&#10;Create Navbar">
+      <change afterPath="$PROJECT_DIR$/scripts/build-content-index.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/content/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/+layout.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/+page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stylelintcache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Taskfile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/html-validate.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/html-validate.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/blog/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/test/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/brand/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/brand/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +31,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="+layout" />
-        <option value="+page" />
         <option value="Backgrount" />
-        <option value="TypeScript File" />
         <option value="Navbar" />
+        <option value="TypeScript File" />
+        <option value="ContentCard" />
+        <option value="+page" />
       </list>
     </option>
   </component>
@@ -80,7 +86,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "reformat",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/static/brand",
+    "last_opened_file_path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/src/routes/projects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.stylelint": "true",
     "node.js.detected.package.tslint": "true",
@@ -99,6 +105,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/routes/projects" />
+      <recent name="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre" />
       <recent name="$PROJECT_DIR$/static/brand" />
       <recent name="$PROJECT_DIR$/src/routes/blog/blog1" />
       <recent name="$PROJECT_DIR$/src/routes/blog" />
@@ -129,7 +137,8 @@
       <workItem from="1761695080637" duration="148000" />
       <workItem from="1761695235265" duration="18000" />
       <workItem from="1761722822082" duration="1815000" />
-      <workItem from="1762272455796" duration="7633000" />
+      <workItem from="1762272455796" duration="11521000" />
+      <workItem from="1762289502013" duration="6164000" />
     </task>
     <task id="LOCAL-00001" summary="ci: &#10;&#10;remove cocogitto">
       <option name="closed" value="true" />
@@ -179,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761693423317</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat(ui): NavBar&#10;&#10;Create Navbar">
+      <option name="closed" value="true" />
+      <created>1762285406314</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1762285406314</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
