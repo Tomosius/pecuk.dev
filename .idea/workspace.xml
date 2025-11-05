@@ -4,48 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="reseucturising complete">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stylelintcache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stylelintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintrc.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskfile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/html-validate.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/html-validate.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/lighthouse-budgets.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/lighthouse-budgets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/build-content-index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build-content-index.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Head.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Head.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/content/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/content/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/contact/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contact/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+layout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/+layout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/brand/logo copy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/brand/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/brand/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/content-index.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/content-index.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/projects/code_institute/p1_vampyre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/projects/code_institute/p1_vampyre.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/projects/code_institute/p2_hangman.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/projects/code_institute/p2_hangman.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/projects/code_institute/p4_my_precious.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/projects/code_institute/p4_my_precious.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/images/projects/code_institute/p5_heritage_housing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/projects/code_institute/p5_heritage_housing.jpg" afterDir="false" />
-    </list>
+    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,33 +59,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;reformat&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/pecukevicius/WebstormProjects/pecuk.dev/src/routes/projects&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/stylelint&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/src/routes/projects",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/stylelint",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
+  "keyToStringList": {
+    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/routes/projects" />
