@@ -14,20 +14,6 @@
     "image": "/images/projects/code_institute/p5_heritage_housing_small.jpg"
   },
   {
-    "url": "/projects/code_institute/p4_my_precious",
-    "type": "project",
-    "title": "My Precious — Collection Tracker",
-    "description": "Django-based CRUD app for managing a personal collection, with login required before accessing entries.",
-    "tags": [
-      "Python",
-      "Django",
-      "CRUD",
-      "Auth",
-      "Responsive"
-    ],
-    "image": "/images/projects/code_institute/p4_my_precious.jpg"
-  },
-  {
     "url": "/projects/code_institute/p3_battleship",
     "type": "project",
     "title": "Battleship — Browser Strategy Game",
@@ -40,6 +26,20 @@
       "DOM"
     ],
     "image": "/images/projects/code_institute/p3_battleship.jpg"
+  },
+  {
+    "url": "/projects/code_institute/p4_my_precious",
+    "type": "project",
+    "title": "My Precious — Collection Tracker",
+    "description": "Django-based CRUD app for managing a personal collection, with login required before accessing entries.",
+    "tags": [
+      "Python",
+      "Django",
+      "CRUD",
+      "Auth",
+      "Responsive"
+    ],
+    "image": "/images/projects/code_institute/p4_my_precious.jpg"
   },
   {
     "url": "/projects/code_institute/p2_hangman",

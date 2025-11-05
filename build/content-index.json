@@ -1,17 +1,17 @@
 [
   {
-    "url": "/projects/code_institute/p4_my_precious",
+    "url": "/projects/code_institute/p5_heritage_houses",
     "type": "project",
-    "title": "My Precious — Collection Tracker",
-    "description": "Django-based CRUD app for managing a personal collection, with login required before accessing entries.",
+    "title": "Heritage Houses — Full-Stack Django App",
+    "description": "A full-stack Django application for showcasing and managing heritage properties, built as a Code Institute milestone project.",
     "tags": [
       "Python",
       "Django",
+      "Full-stack",
       "CRUD",
-      "Auth",
       "Responsive"
     ],
-    "image": "/images/projects/code_institute/p4_my_precious.jpg"
+    "image": "/images/projects/code_institute/p5_heritage_housing_small.jpg"
   },
   {
     "url": "/projects/code_institute/p3_battleship",
@@ -28,18 +28,18 @@
     "image": "/images/projects/code_institute/p3_battleship.jpg"
   },
   {
-    "url": "/projects/code_institute/p5_heritage_houses",
+    "url": "/projects/code_institute/p4_my_precious",
     "type": "project",
-    "title": "Heritage Houses — Full-Stack Django App",
-    "description": "A full-stack Django application for showcasing and managing heritage properties, built as a Code Institute milestone project.",
+    "title": "My Precious — Collection Tracker",
+    "description": "Django-based CRUD app for managing a personal collection, with login required before accessing entries.",
     "tags": [
       "Python",
       "Django",
-      "Full-stack",
       "CRUD",
+      "Auth",
       "Responsive"
     ],
-    "image": "/images/projects/code_institute/p5_heritage_housing_small.jpg"
+    "image": "/images/projects/code_institute/p4_my_precious.jpg"
   },
   {
     "url": "/projects/code_institute/p2_hangman",
