@@ -1,40 +1,49 @@
 // src/routes/projects/+page.ts
 import type { PageLoad } from './$types';
+import { SITE_URL, type MetaTags } from '$lib';
 
-const SITE_URL = 'https://pecuk.dev';
+const CANONICAL = `${SITE_URL}/projects`;
+const TITLE = 'Projects | pecuk.dev';
+const DESCRIPTION = 'Projects made by Tomas Pecukevicius.';
 
-export const load: PageLoad = async () => {
-  const title = 'Projects | pecuk.dev';
-  const description = 'Projects made by Tomas Pecukevicius.';
-  const canonical = `${SITE_URL}/projects`;
+export const load: PageLoad = async ({ parent }) => {
+  const { metaTags: parentMeta } = await parent();
 
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'CollectionPage',
-    name: 'Projects | pecuk.dev',
-    description,
-    url: canonical
+  const pageMetaTags: MetaTags = {
+    ...parentMeta,
+    title: TITLE,
+    description: DESCRIPTION,
+    canonical: CANONICAL,
+    openGraph: {
+      ...(parentMeta.openGraph ?? {}),
+      title: TITLE,
+      description: DESCRIPTION,
+      url: CANONICAL,
+      type: 'website',
+      site_name: 'pecuk.dev',
+      locale: 'en_GB'
+    },
+    twitter: {
+      ...(parentMeta.twitter ?? {}),
+      card: 'summary_large_image',
+      title: TITLE,
+      description: DESCRIPTION
+    }
   };
 
-  return {
-    seo: {
-      title,
-      description,
-      canonical,
-      og: {
-        title,
-        description,
-        url: canonical,
-        type: 'website',
-        siteName: 'pecuk.dev',
-        locale: 'en_GB'
-      },
-      twitter: {
-        card: 'summary_large_image',
-        title,
-        description
-      },
-      jsonLd
+  // optional — layout already added a CollectionPage
+  const pageJsonLd = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'CollectionPage',
+      name: TITLE,
+      description: DESCRIPTION,
+      url: CANONICAL
     }
+  ];
+
+  return {
+    pageMetaTags,
+    pageJsonLd
   };
 };

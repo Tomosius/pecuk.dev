@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="feat(ui): NavBar&#10;&#10;Create Navbar">
-      <change afterPath="$PROJECT_DIR$/scripts/build-content-index.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/content/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/+layout.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/+page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="testing SEO">
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/+layout.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taskfile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stylelintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Head.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Head.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +87,7 @@
     "node.js.selected.package.stylelint": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/stylelint",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "ml.llm.LLMThirdPartyAiProvidersConfigurable",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
@@ -138,7 +131,7 @@
       <workItem from="1761695235265" duration="18000" />
       <workItem from="1761722822082" duration="1815000" />
       <workItem from="1762272455796" duration="11521000" />
-      <workItem from="1762289502013" duration="6164000" />
+      <workItem from="1762289502013" duration="10372000" />
     </task>
     <task id="LOCAL-00001" summary="ci: &#10;&#10;remove cocogitto">
       <option name="closed" value="true" />
@@ -196,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762285406314</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="testing SEO">
+      <option name="closed" value="true" />
+      <created>1762295807082</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1762295807082</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,6 +220,7 @@
     <MESSAGE value="ci(improvements): task&#10;&#10;creat Taskfile.yml for task" />
     <MESSAGE value="fix(seo): &#10;&#10;testing seo nesting capabilities" />
     <MESSAGE value="feat(ui): NavBar&#10;&#10;Create Navbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(ui): NavBar&#10;&#10;Create Navbar" />
+    <MESSAGE value="testing SEO" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing SEO" />
   </component>
 </project>
