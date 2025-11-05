@@ -1,151 +1,151 @@
 <script lang="ts">
-  import { page } from '$app/stores';
-  import type { MetaTags } from '$lib';
+	import { page } from '$app/stores';
+	import type { MetaTags } from '$lib';
 
-  type HeadData = {
-    seoMetaStack?: Partial<MetaTags>[];
-    seoJsonLdStack?: unknown[];
-    baseMetaTags?: Partial<MetaTags>;
-    metaTags?: Partial<MetaTags>;
-    pageMetaTags?: Partial<MetaTags>;
-    baseJsonLd?: unknown[];
-    jsonLd?: unknown[];
-    pageJsonLd?: unknown[];
-  };
+	type HeadData = {
+		seoMetaStack?: Partial<MetaTags>[];
+		seoJsonLdStack?: unknown[];
+		baseMetaTags?: Partial<MetaTags>;
+		metaTags?: Partial<MetaTags>;
+		pageMetaTags?: Partial<MetaTags>;
+		baseJsonLd?: unknown[];
+		jsonLd?: unknown[];
+		pageJsonLd?: unknown[];
+	};
 
-  let data: HeadData = {};
-  let metaStack: Partial<MetaTags>[] = [];
-  let meta: Partial<MetaTags> = {};
-  let jsonLd: unknown[] = [];
-  const scriptTag = 'script';
+	let data: HeadData = {};
+	let metaStack: Partial<MetaTags>[] = [];
+	let meta: Partial<MetaTags> = {};
+	let jsonLd: unknown[] = [];
+	const scriptTag = 'script';
 
-  // pull from $page
-  $: data = ($page.data as HeadData) ?? {};
+	// pull from $page
+	$: data = ($page.data as HeadData) ?? {};
 
-  // merge layers so later ones override earlier ones, but keep nested objects merged
-  const mergeMetaLayers = (layers: Partial<MetaTags>[]) =>
-    layers.reduce<Partial<MetaTags>>((acc, layer) => {
-      if (!layer) return acc;
-      const next: Partial<MetaTags> = { ...acc, ...layer };
+	// merge layers so later ones override earlier ones, but keep nested objects merged
+	const mergeMetaLayers = (layers: Partial<MetaTags>[]) =>
+		layers.reduce<Partial<MetaTags>>((acc, layer) => {
+			if (!layer) return acc;
+			const next: Partial<MetaTags> = { ...acc, ...layer };
 
-      // deep-merge openGraph
-      if (layer.openGraph || acc.openGraph) {
-        next.openGraph = { ...(acc.openGraph ?? {}), ...(layer.openGraph ?? {}) };
-      }
+			// deep-merge openGraph
+			if (layer.openGraph || acc.openGraph) {
+				next.openGraph = { ...(acc.openGraph ?? {}), ...(layer.openGraph ?? {}) };
+			}
 
-      // deep-merge twitter
-      if (layer.twitter || acc.twitter) {
-        next.twitter = { ...(acc.twitter ?? {}), ...(layer.twitter ?? {}) };
-      }
+			// deep-merge twitter
+			if (layer.twitter || acc.twitter) {
+				next.twitter = { ...(acc.twitter ?? {}), ...(layer.twitter ?? {}) };
+			}
 
-      return next;
-    }, {});
+			return next;
+		}, {});
 
-  // collect all meta-like layers in correct order
-  const collectMetaLayers = () => {
-    const stack = (data.seoMetaStack ?? []).filter(Boolean);
-    const fallback = [data.baseMetaTags, data.metaTags, data.pageMetaTags].filter(
-      (entry): entry is Partial<MetaTags> => Boolean(entry)
-    );
+	// collect all meta-like layers in correct order
+	const collectMetaLayers = () => {
+		const stack = (data.seoMetaStack ?? []).filter(Boolean);
+		const fallback = [data.baseMetaTags, data.metaTags, data.pageMetaTags].filter(
+			(entry): entry is Partial<MetaTags> => Boolean(entry)
+		);
 
-    // if we have an explicit stack from layouts, use that and then let page add on top
-    const layers = stack.length ? [...stack] : [...fallback];
+		// if we have an explicit stack from layouts, use that and then let page add on top
+		const layers = stack.length ? [...stack] : [...fallback];
 
-    if (stack.length) {
-      if (data.metaTags) layers.push(data.metaTags);
-      if (data.pageMetaTags) layers.push(data.pageMetaTags);
-    }
+		if (stack.length) {
+			if (data.metaTags) layers.push(data.metaTags);
+			if (data.pageMetaTags) layers.push(data.pageMetaTags);
+		}
 
-    return layers;
-  };
+		return layers;
+	};
 
-  // compute final meta
-  $: {
-    metaStack = collectMetaLayers();
-    meta = mergeMetaLayers(metaStack);
-  }
+	// compute final meta
+	$: {
+		metaStack = collectMetaLayers();
+		meta = mergeMetaLayers(metaStack);
+	}
 
-  // compute JSON-LD with de-dupe
-  $: {
-    const stack = (data.seoJsonLdStack ?? []).filter(Boolean);
-    const fallback = [
-      ...(data.baseJsonLd ?? []),
-      ...(data.jsonLd ?? []),
-      ...(data.pageJsonLd ?? [])
-    ].filter(Boolean);
+	// compute JSON-LD with de-dupe
+	$: {
+		const stack = (data.seoJsonLdStack ?? []).filter(Boolean);
+		const fallback = [
+			...(data.baseJsonLd ?? []),
+			...(data.jsonLd ?? []),
+			...(data.pageJsonLd ?? [])
+		].filter(Boolean);
 
-    let combined: unknown[] = stack.length ? [...stack] : [...fallback];
+		let combined: unknown[] = stack.length ? [...stack] : [...fallback];
 
-    if (stack.length) {
-      if (data.jsonLd) combined = combined.concat(data.jsonLd);
-      if (data.pageJsonLd) combined = combined.concat(data.pageJsonLd);
-    }
+		if (stack.length) {
+			if (data.jsonLd) combined = combined.concat(data.jsonLd);
+			if (data.pageJsonLd) combined = combined.concat(data.pageJsonLd);
+		}
 
-    const seen: Record<string, boolean> = {};
-    jsonLd = combined.filter((item) => {
-      if (!item) return false;
-      const key = typeof item === 'string' ? item : JSON.stringify(item);
-      if (seen[key]) return false;
-      seen[key] = true;
-      return true;
-    });
-  }
+		const seen: Record<string, boolean> = {};
+		jsonLd = combined.filter((item) => {
+			if (!item) return false;
+			const key = typeof item === 'string' ? item : JSON.stringify(item);
+			if (seen[key]) return false;
+			seen[key] = true;
+			return true;
+		});
+	}
 </script>
 
 <svelte:head>
-  <title>{meta.title}</title>
+	<title>{meta.title}</title>
 
-  {#if meta.description}<meta name="description" content={meta.description} />{/if}
-  {#if meta.author}<meta name="author" content={meta.author} />{/if}
-  {#if meta.robots}<meta name="robots" content={meta.robots} />{/if}
-  {#if meta.themeColor}<meta name="theme-color" content={meta.themeColor} />{/if}
-  {#if meta.canonical}<link rel="canonical" href={meta.canonical} />{/if}
+	{#if meta.description}<meta name="description" content={meta.description} />{/if}
+	{#if meta.author}<meta name="author" content={meta.author} />{/if}
+	{#if meta.robots}<meta name="robots" content={meta.robots} />{/if}
+	{#if meta.themeColor}<meta name="theme-color" content={meta.themeColor} />{/if}
+	{#if meta.canonical}<link rel="canonical" href={meta.canonical} />{/if}
 
-  <!-- Open Graph -->
-  {#if meta.openGraph}
-    {#if meta.openGraph.type}
-      <meta property="og:type" content={meta.openGraph.type} />
-    {/if}
-    {#if meta.openGraph.site_name}
-      <meta property="og:site_name" content={meta.openGraph.site_name} />
-    {/if}
-    {#if meta.openGraph.locale}
-      <meta property="og:locale" content={meta.openGraph.locale} />
-    {/if}
-    {#if meta.openGraph.title}
-      <meta property="og:title" content={meta.openGraph.title} />
-    {/if}
-    {#if meta.openGraph.description}
-      <meta property="og:description" content={meta.openGraph.description} />
-    {/if}
-    {#if meta.openGraph.url}
-      <meta property="og:url" content={meta.openGraph.url} />
-    {/if}
-    {#if meta.openGraph.image}
-      <meta property="og:image" content={meta.openGraph.image} />
-    {/if}
-  {/if}
+	<!-- Open Graph -->
+	{#if meta.openGraph}
+		{#if meta.openGraph.type}
+			<meta property="og:type" content={meta.openGraph.type} />
+		{/if}
+		{#if meta.openGraph.site_name}
+			<meta property="og:site_name" content={meta.openGraph.site_name} />
+		{/if}
+		{#if meta.openGraph.locale}
+			<meta property="og:locale" content={meta.openGraph.locale} />
+		{/if}
+		{#if meta.openGraph.title}
+			<meta property="og:title" content={meta.openGraph.title} />
+		{/if}
+		{#if meta.openGraph.description}
+			<meta property="og:description" content={meta.openGraph.description} />
+		{/if}
+		{#if meta.openGraph.url}
+			<meta property="og:url" content={meta.openGraph.url} />
+		{/if}
+		{#if meta.openGraph.image}
+			<meta property="og:image" content={meta.openGraph.image} />
+		{/if}
+	{/if}
 
-  <!-- Twitter -->
-  {#if meta.twitter}
-    {#if meta.twitter.card}
-      <meta name="twitter:card" content={meta.twitter.card} />
-    {/if}
-    {#if meta.twitter.title}
-      <meta name="twitter:title" content={meta.twitter.title} />
-    {/if}
-    {#if meta.twitter.description}
-      <meta name="twitter:description" content={meta.twitter.description} />
-    {/if}
-    {#if meta.twitter.image}
-      <meta name="twitter:image" content={meta.twitter.image} />
-    {/if}
-  {/if}
+	<!-- Twitter -->
+	{#if meta.twitter}
+		{#if meta.twitter.card}
+			<meta name="twitter:card" content={meta.twitter.card} />
+		{/if}
+		{#if meta.twitter.title}
+			<meta name="twitter:title" content={meta.twitter.title} />
+		{/if}
+		{#if meta.twitter.description}
+			<meta name="twitter:description" content={meta.twitter.description} />
+		{/if}
+		{#if meta.twitter.image}
+			<meta name="twitter:image" content={meta.twitter.image} />
+		{/if}
+	{/if}
 
-  <!-- JSON-LD (stacked from layouts + page) -->
-  {#each jsonLd as item, i (i)}
-    <svelte:element this={scriptTag} type="application/ld+json">
-      {JSON.stringify(item).replace(/</g, '\\u003c')}
-    </svelte:element>
-  {/each}
+	<!-- JSON-LD (stacked from layouts + page) -->
+	{#each jsonLd as item, i (i)}
+		<svelte:element this={scriptTag} type="application/ld+json">
+			{JSON.stringify(item).replace(/</g, '\\u003c')}
+		</svelte:element>
+	{/each}
 </svelte:head>

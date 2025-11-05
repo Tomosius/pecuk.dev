@@ -1,18 +1,14 @@
 {
-  "$schema": "https://html-validate.org/schemas/config.json",
-  "extends": [
-    "html-validate:recommended",
-    "html-validate:standard",
-    "html-validate:document"
-  ],
-  "rules": {
-    "no-dup-id": "error",
-    "void-style": "off",
-    "require-sri": ["error", { "target": "crossorigin" }],
-    "element-required-content": "error",
-    "no-trailing-whitespace": "off",
+	"$schema": "https://html-validate.org/schemas/config.json",
+	"extends": ["html-validate:recommended", "html-validate:standard", "html-validate:document"],
+	"rules": {
+		"no-dup-id": "error",
+		"void-style": "off",
+		"require-sri": ["error", { "target": "crossorigin" }],
+		"element-required-content": "error",
+		"no-trailing-whitespace": "off",
 
-    "no-inline-style": "off",
-    "no-implicit-button-type": "off"
-  }
+		"no-inline-style": "off",
+		"no-implicit-button-type": "off"
+	}
 }

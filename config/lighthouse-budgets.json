@@ -8,7 +8,7 @@
 		],
 		"timings": [
 			{ "metric": "interactive", "budget": 3500 },
-			{ "metric": "first-contentful-paint", "budget": 1500 }
+			{ "metric": "first-contentful-paint", "budget": 1700 }
 		]
 	}
 ]

@@ -28,7 +28,10 @@
 	const emptyParams = {} as Record<string, string>;
 
 	const isExternalHref = (to: string) =>
-		/^(https?:)?\/\//.test(to) || to.startsWith('#') || to.startsWith('mailto:') || to.startsWith('tel:');
+		/^(https?:)?\/\//.test(to) ||
+		to.startsWith('#') ||
+		to.startsWith('mailto:') ||
+		to.startsWith('tel:');
 
 	const resolvePath = (path: Pathname) => {
 		const resolved = resolve(path as unknown as RouteId, emptyParams);
@@ -51,23 +54,23 @@
 <div class="sticky top-4 z-50">
 	<div class="mx-auto max-w-6xl px-4">
 		<div
-			class="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.07)_inset] px-3 py-2 md:px-4"
+			class="flex items-center gap-3 rounded-2xl border border-white/15 bg-white/5 px-3 py-2 shadow-[0_0_0_1px_rgba(255,255,255,0.07)_inset] backdrop-blur-md md:px-4"
 		>
 			<!-- Logo -->
 			<a
 				href={homeHref}
-				class="shrink-0 flex items-center rounded-xl px-3 py-1.5 bg-white/10 border border-white/15"
+				class="flex shrink-0 items-center rounded-xl border border-white/15 bg-white/10 px-3 py-1.5"
 			>
 				<img src={asset('/brand/logo.png')} alt="pecuk.dev logo" class="h-8 w-auto" />
 			</a>
 
 			<!-- Desktop nav -->
-			<nav class="hidden md:flex items-center gap-1 ml-1">
+			<nav class="ml-1 hidden items-center gap-1 md:flex">
 				{#each links as l, i (l.href + '-' + i)}
 					{#if isExternal(l)}
 						<a
 							href={l.href}
-							class="px-3 py-1.5 rounded-xl border transition hover:bg-white/10 border-transparent"
+							class="rounded-xl border border-transparent px-3 py-1.5 transition hover:bg-white/10"
 							rel="noreferrer"
 						>
 							{l.label}
@@ -76,9 +79,9 @@
 						<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 						<a
 							href={resolvePath(l.href)}
-							class="px-3 py-1.5 rounded-xl border transition {isActive(l.href)
-								? 'bg-white/15 border-white/25'
-								: 'hover:bg-white/10 border-transparent'}"
+							class="rounded-xl border px-3 py-1.5 transition {isActive(l.href)
+								? 'border-white/25 bg-white/15'
+								: 'border-transparent hover:bg-white/10'}"
 							aria-current={isActive(l.href) ? 'page' : undefined}
 						>
 							{l.label}
@@ -90,7 +93,7 @@
 			<!-- Mobile toggle -->
 			<div class="ml-auto flex items-center">
 				<button
-					class="md:hidden px-3 py-1.5 rounded-xl border border-white/15 bg-white/5 hover:bg-white/10 transition"
+					class="rounded-xl border border-white/15 bg-white/5 px-3 py-1.5 transition hover:bg-white/10 md:hidden"
 					onclick={() => (open = !open)}
 					aria-label="Toggle menu"
 					aria-expanded={open}
@@ -102,13 +105,13 @@
 
 		{#if open}
 			<div
-				class="mt-2 rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md shadow-[0_0_0_1px_rgba(255,255,255,0.07)_inset] p-2 md:hidden"
+				class="mt-2 rounded-2xl border border-white/15 bg-white/5 p-2 shadow-[0_0_0_1px_rgba(255,255,255,0.07)_inset] backdrop-blur-md md:hidden"
 			>
 				{#each links as l, i (l.href + '-' + i)}
 					{#if isExternal(l)}
 						<a
 							href={l.href}
-							class="block px-3 py-2 rounded-xl transition hover:bg-white/10"
+							class="block rounded-xl px-3 py-2 transition hover:bg-white/10"
 							onclick={() => (open = false)}
 							rel="noreferrer"
 						>
@@ -118,7 +121,7 @@
 						<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
 						<a
 							href={resolvePath(l.href)}
-							class="block px-3 py-2 rounded-xl transition {isActive(l.href)
+							class="block rounded-xl px-3 py-2 transition {isActive(l.href)
 								? 'bg-white/15'
 								: 'hover:bg-white/10'}"
 							onclick={() => (open = false)}
@@ -133,4 +136,3 @@
 	</div>
 </div>
 <!-- eslint-enable svelte/no-navigation-without-resolve -->
-

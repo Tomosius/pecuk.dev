@@ -4,28 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="fixing jsonld">
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.svelte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="reseucturising complete">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.stylelintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stylelintcache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.stylelintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintrc.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taskfile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Taskfile.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/html-validate.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/html-validate.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/lighthouse-budgets.json" beforeDir="false" afterPath="$PROJECT_DIR$/config/lighthouse-budgets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/build-content-index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build-content-index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Head.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Head.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+layout.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+layout.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.svelte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Navbar.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/content/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/content/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/about/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/about/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/blog/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/contact/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/contact/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/brand/logo copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/brand/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/static/brand/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/content-index.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/content-index.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/projects/code_institute/p1_vampyre.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/projects/code_institute/p1_vampyre.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/projects/code_institute/p2_hangman.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/projects/code_institute/p2_hangman.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/projects/code_institute/p4_my_precious.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/projects/code_institute/p4_my_precious.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/projects/code_institute/p5_heritage_housing.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/projects/code_institute/p5_heritage_housing.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +163,7 @@
       <workItem from="1761722822082" duration="1815000" />
       <workItem from="1762272455796" duration="11521000" />
       <workItem from="1762289502013" duration="10539000" />
-      <workItem from="1762370623419" duration="2657000" />
+      <workItem from="1762370623419" duration="6231000" />
     </task>
     <task id="LOCAL-00001" summary="ci: &#10;&#10;remove cocogitto">
       <option name="closed" value="true" />
@@ -218,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762370458594</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added more projects">
+      <option name="closed" value="true" />
+      <created>1762373349479</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1762373349479</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +270,8 @@
     <MESSAGE value="feat(ui): NavBar&#10;&#10;Create Navbar" />
     <MESSAGE value="testing SEO" />
     <MESSAGE value="fixing jsonld" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing jsonld" />
+    <MESSAGE value="added more projects" />
+    <MESSAGE value="reseucturising complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="reseucturising complete" />
   </component>
 </project>

@@ -46,8 +46,8 @@
 	}
 </script>
 
-<div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-20">
-	<h1 class="text-4xl font-bold text-center tracking-tight">
+<div class="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+	<h1 class="text-center text-4xl font-bold tracking-tight">
 		Get in <span class="text-[var(--accent)]">touch</span>
 	</h1>
 	<p class="mt-4 text-center opacity-80">
@@ -58,7 +58,7 @@
 		action="https://api.web3forms.com/submit"
 		method="POST"
 		on:submit={submit}
-		class="mt-10 space-y-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md p-6 shadow-lg"
+		class="mt-10 space-y-6 rounded-2xl border border-white/10 bg-white/5 p-6 shadow-lg backdrop-blur-md"
 	>
 		<input type="hidden" name="access_key" value="0a556be0-722b-4a30-a445-3c77176a6956" />
 		<input type="checkbox" name="botcheck" tabindex="-1" class="hidden" aria-hidden="true" />
@@ -103,7 +103,7 @@
 			<button
 				type="submit"
 				disabled={sending}
-				class="rounded-xl border border-[var(--accent)]/40 bg-[var(--accent)]/10 hover:bg-[var(--accent)]/15 transition px-6 py-2.5 font-semibold disabled:opacity-60"
+				class="border-[var(--accent)]/40 bg-[var(--accent)]/10 hover:bg-[var(--accent)]/15 rounded-xl border px-6 py-2.5 font-semibold transition disabled:opacity-60"
 			>
 				{sending ? 'Sending…' : 'Send message'}
 			</button>
@@ -124,7 +124,9 @@
 
 {#if ok}
 	<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-		<div class="rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md px-6 py-5 text-center">
+		<div
+			class="rounded-2xl border border-white/15 bg-white/10 px-6 py-5 text-center backdrop-blur-md"
+		>
 			<h2 class="text-xl font-semibold">Thanks!</h2>
 			<p class="mt-2 opacity-85">Your message was sent. Redirecting…</p>
 		</div>

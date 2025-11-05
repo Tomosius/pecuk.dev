@@ -7,3 +7,17 @@
 		resize: vertical;
 	}
 }
+
+/* src/app.css */
+
+/* stop the white flash behind the app */
+html,
+body {
+	background: #2c2c54; /* or whatever your --bg-bottom roughly is */
+	min-height: 100%;
+}
+
+/* optional: reduce the bounce showing anything weird */
+body {
+	overscroll-behavior: none;
+}
