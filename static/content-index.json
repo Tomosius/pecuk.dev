@@ -1,5 +1,60 @@
 [
   {
+    "url": "/projects/code_institute/p5_heritage_houses",
+    "type": "project",
+    "title": "Heritage Houses — Full-Stack Django App",
+    "description": "A full-stack Django application for showcasing and managing heritage properties, built as a Code Institute milestone project.",
+    "tags": [
+      "Python",
+      "Django",
+      "Full-stack",
+      "CRUD",
+      "Responsive"
+    ],
+    "image": "/images/projects/code_institute/p5_heritage_housing_small.jpg"
+  },
+  {
+    "url": "/projects/code_institute/p3_battleship",
+    "type": "project",
+    "title": "Battleship — Browser Strategy Game",
+    "description": "A browser-based recreation of the classic Battleship game with turn-based player vs CPU, grid rendering, and clear hit/miss feedback.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Game",
+      "DOM"
+    ],
+    "image": "/images/projects/code_institute/p3_battleship.jpg"
+  },
+  {
+    "url": "/projects/code_institute/p4_my_precious",
+    "type": "project",
+    "title": "My Precious — Collection Tracker",
+    "description": "Django-based CRUD app for managing a personal collection, with login required before accessing entries.",
+    "tags": [
+      "Python",
+      "Django",
+      "CRUD",
+      "Auth",
+      "Responsive"
+    ],
+    "image": "/images/projects/code_institute/p4_my_precious.jpg"
+  },
+  {
+    "url": "/projects/code_institute/p2_hangman",
+    "type": "project",
+    "title": "HangMan — Word Guessing Game",
+    "description": "A browser-based hangman-style game built to practice JavaScript DOM manipulation, game state management, and responsive UI.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Game"
+    ],
+    "image": "/images/projects/code_institute/p2_hangman_small.jpg"
+  },
+  {
     "url": "/projects/code_institute/p1_vampyre",
     "type": "project",
     "title": "Vampyre — A Vampire History Site",
@@ -11,18 +66,5 @@
       "Responsive"
     ],
     "image": "/images/projects/code_institute/p1_vampyre_small.jpg"
-  },
-  {
-    "url": "/blog/test/test_page",
-    "type": "blog",
-    "slug": "future-of-sveltekit",
-    "title": "Tomosius",
-    "description": "A deep dive into SvelteKit 5, the Runes API...",
-    "tags": [
-      "sveltekit",
-      "runes",
-      "frontend"
-    ],
-    "image": "/og-images/future-of-sveltekit.png"
   }
 ]

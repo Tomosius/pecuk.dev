@@ -4,16 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="testing SEO">
-      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/+layout.ts" afterDir="false" />
+    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="fixing jsonld">
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p2_hangman/+page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p3_battleship/+page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p4_my_precious/+page.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p5_heritage_houses/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.stylelintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.stylelintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build-content-index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build-content-index.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/ContentCard.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/components/Head.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/components/Head.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/+layout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+layout.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/+page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/p1_vampyre/+page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+layout.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+layout.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/blog/test/test_page/+page.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/projects/code_institute/+layout.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/projects/code_institute/+layout.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/content-index.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/content-index.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +38,9 @@
         <option value="+layout" />
         <option value="Backgrount" />
         <option value="Navbar" />
-        <option value="TypeScript File" />
         <option value="ContentCard" />
         <option value="+page" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -69,33 +81,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "reformat",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/src/routes/projects",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/stylelint",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;reformat&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pecukevicius/WebstormProjects/pecuk.dev/src/routes/projects&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/routes/projects" />
@@ -131,7 +143,8 @@
       <workItem from="1761695235265" duration="18000" />
       <workItem from="1761722822082" duration="1815000" />
       <workItem from="1762272455796" duration="11521000" />
-      <workItem from="1762289502013" duration="10372000" />
+      <workItem from="1762289502013" duration="10539000" />
+      <workItem from="1762370623419" duration="2657000" />
     </task>
     <task id="LOCAL-00001" summary="ci: &#10;&#10;remove cocogitto">
       <option name="closed" value="true" />
@@ -197,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762295807082</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="fixing jsonld">
+      <option name="closed" value="true" />
+      <created>1762370458594</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1762370458594</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +242,7 @@
     <MESSAGE value="fix(seo): &#10;&#10;testing seo nesting capabilities" />
     <MESSAGE value="feat(ui): NavBar&#10;&#10;Create Navbar" />
     <MESSAGE value="testing SEO" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing SEO" />
+    <MESSAGE value="fixing jsonld" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing jsonld" />
   </component>
 </project>

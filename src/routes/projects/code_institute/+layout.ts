@@ -5,11 +5,12 @@ import { SITE_URL, type MetaTags } from '$lib';
 const SECTION_URL = `${SITE_URL}/projects/code_institute`;
 
 export const load: LayoutLoad = async ({ parent }) => {
-  const {
-    metaTags: parentMeta = {},
-    seoMetaStack = [],
-    seoJsonLdStack = []
-  } = await parent();
+  const parentData = await parent();
+
+  // tell TS what this is
+  const parentMeta = (parentData.metaTags ?? {}) as Partial<MetaTags>;
+  const seoMetaStack = parentData.seoMetaStack ?? [];
+  const seoJsonLdStack = parentData.seoJsonLdStack ?? [];
 
   const metaOverrides: Partial<MetaTags> = {
     title: 'Code Institute Projects | pecuk.dev',

@@ -28,9 +28,27 @@ async function main() {
 
   for (const file of files) {
     const fileUrl = pathToFileURL(file).href;
-    const mod = await import(fileUrl);
+    let mod;
 
-    // support both `indexEntry` (old) and `_indexEntry` (new)
+    try {
+      mod = await import(fileUrl);
+    } catch (err) {
+      // most common case: page imports `$lib` (Vite alias) which Node can't resolve here
+      if (
+        err &&
+        (err.code === 'ERR_MODULE_NOT_FOUND' || err.message?.includes('Cannot find package')) &&
+        err.message?.includes('$lib')
+      ) {
+        console.warn(`⚠️  skipping ${path.relative(ROOT, file)} (uses $lib alias not available in node)`);
+        continue;
+      }
+
+      // if it's some other error, still skip — we don't want prebuild to die because of one page
+      console.warn(`⚠️  skipping ${path.relative(ROOT, file)} (${err.message})`);
+      continue;
+    }
+
+    // support both `_indexEntry` (your current pattern) and `indexEntry`
     const rawEntry = mod._indexEntry ?? mod.indexEntry;
     if (!rawEntry) continue;
 
