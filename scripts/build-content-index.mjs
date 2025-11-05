@@ -10,6 +10,7 @@ const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..');
 const ROUTES_DIR = path.join(ROOT, 'src', 'routes');
 const OUT_FILE = path.join(ROOT, 'static', 'content-index.json');
+const SITEMAP_FILE = path.join(ROOT, 'static', 'sitemap.xml');
 
 function routePathFromFile(file) {
 	let rel = path.relative(ROUTES_DIR, file);
@@ -45,12 +46,11 @@ async function main() {
 				continue;
 			}
 
-			// if it's some other error, still skip — we don't want prebuild to die because of one page
 			console.warn(`⚠️  skipping ${path.relative(ROOT, file)} (${err.message})`);
 			continue;
 		}
 
-		// support both `_indexEntry` (your current pattern) and `indexEntry`
+		// support both `_indexEntry` and `indexEntry`
 		const rawEntry = mod._indexEntry ?? mod.indexEntry;
 		if (!rawEntry) continue;
 
@@ -72,10 +72,29 @@ async function main() {
 		entries.push(entry);
 	}
 
+	// write JSON index
 	await fs.mkdir(path.dirname(OUT_FILE), { recursive: true });
 	await fs.writeFile(OUT_FILE, JSON.stringify(entries, null, 2), 'utf8');
-
 	console.log(`✅ wrote ${entries.length} items to ${path.relative(ROOT, OUT_FILE)}`);
+
+	// write sitemap
+	const now = new Date().toISOString();
+	const urlset = [
+		'<?xml version="1.0" encoding="UTF-8"?>',
+		'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
+		// homepage
+		`  <url><loc>https://pecuk.dev/</loc><lastmod>${now}</lastmod><priority>1.0</priority></url>`,
+		...entries.map((entry) => {
+			const loc = entry.url.startsWith('http')
+				? entry.url
+				: `https://pecuk.dev${entry.url}`;
+			return `  <url><loc>${loc}</loc><lastmod>${now}</lastmod></url>`;
+		}),
+		'</urlset>'
+	].join('\n');
+
+	await fs.writeFile(SITEMAP_FILE, urlset, 'utf8');
+	console.log(`✅ wrote sitemap to ${path.relative(ROOT, SITEMAP_FILE)}`);
 }
 
 main().catch((err) => {

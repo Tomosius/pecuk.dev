@@ -4,7 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="" />
+    <list default="true" id="8bee7548-c2ac-44c4-b7ce-26ec98a19333" name="Changes" comment="deleted workflows">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/assets/0.C2uYCbVV.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/BHcJweFZ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/BIHI7g3E.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/BJMVw-fx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/BTvCL_K2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/BU79TYfH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/BxWX6ZLx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/CALWz7cW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/CXpj_ddR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/CebKJ7Ab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/ChAajpM8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/CkdZ6kBs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/Ckn0W0fv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/Cl68CY-p.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/Crwpe-Fq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/D892Rrle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/DIG8PYS2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/DNyqqKKq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/DQjdhOqH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/DsnmJJEf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/EARFFTyX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/chunks/PPVm8Dsz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/entry/app.DyxWxSrt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/entry/start.BaXhixio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/0.xmixCjBJ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/1.Don_Vza7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/10.BbsSJnJ6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/11.DPO_Fih7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/12.Ck2Fhq1n.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/13.BqzQNwN9.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/14.BH81Js9G.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/2.CxO-hv_J.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/3.BlcaOKg4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/4.B0ywGkeN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/5.0-rbbcUr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/6.CLylCNjH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/7.FSqxTBQ-.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/8.CDvUKKVI.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/immutable/nodes/9.Dz8iUxt7.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/_app/version.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/brand/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/content-index.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/projects/code_institute/p1_vampyre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/projects/code_institute/p1_vampyre_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/projects/code_institute/p2_hangman.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/projects/code_institute/p2_hangman_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/projects/code_institute/p3_battleship.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/projects/code_institute/p4_my_precious.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/projects/code_institute/p4_my_precious_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/projects/code_institute/p5_heritage_housing.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/images/projects/code_institute/p5_heritage_housing_small.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/projects/code_institute/p1_vampyre.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/projects/code_institute/p2_hangman.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/projects/code_institute/p3_battleship.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/projects/code_institute/p4_my_precious.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/projects/code_institute/p5_heritage_houses.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/build-content-index.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/build-content-index.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/content-index.json" beforeDir="false" afterPath="$PROJECT_DIR$/static/content-index.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +102,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -59,33 +127,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/src/routes/projects",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.stylelint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.stylelint": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/stylelint",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/pecukevicius/WebstormProjects/pecuk.dev/src/routes/projects&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.stylelint&quot;: &quot;/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/stylelint&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/pecukevicius/WebstormProjects/pecuk.dev/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
+  &quot;keyToStringList&quot;: {
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/routes/projects" />
@@ -204,7 +272,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762373349479</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="deleted workflows">
+      <option name="closed" value="true" />
+      <created>1762377825327</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1762377825327</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +307,7 @@
     <MESSAGE value="fixing jsonld" />
     <MESSAGE value="added more projects" />
     <MESSAGE value="reseucturising complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="reseucturising complete" />
+    <MESSAGE value="deleted workflows" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted workflows" />
   </component>
 </project>
